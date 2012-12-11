@@ -1,0 +1,1 @@
+This repo holds my personal page (currently a portfolio). The live site is at http://vladkvit.github.com
