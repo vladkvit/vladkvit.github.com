@@ -71,7 +71,7 @@
 		  <h3>Quadcopter</h3>
 		    <aside><p>programming, real-time, embedded</p></aside>
             <p>I sponsored and did quite a bit of work to help with my brother's quadcopter. This was his Gr 12 robotics club project, and they ended up winning second place @ World championship. Unfortunately, I don't have any pictures of it flying - I'll post some up later, hopefully.</p>
-			<p><a href="https://github.com/larrykvit/Motion_Detection_Suite">Here's</a> the code Github page. The basic idea was to try using a tiny x86 board with TCP/IP over WiFi, and a Ground Control Station. We used <a href="http://qgroundcontrol.org/">QGroundControl</a> as the GCS. We were using 500Hz ESCs (brushless motor controllers), a 500Hz AHRS (heading and reference fusion of 3D gyro + 3D magnetometer + 3D accelerometer), and a Maestro USB-PWM adapter. Although using x86 + OS was a bad idea, it still worked.</p>
+			<p><a href="https://github.com/larrykvit/Motion_Detection_Suite">Here's</a> the code Github page. The basic idea was to try using a tiny x86 board with TCP/IP over WiFi, and a Ground Control Station. We used <a href="http://qgroundcontrol.org/">QGroundControl</a> as the GCS. We were using 500Hz ESCs (brushless motor controllers), a 500Hz AHRS (heading and reference fusion of 3D gyro + 3D magnetometer + 3D accelerometer), and a Maestro USB-PWM adapter. Although using x86 + OS wasn't the best idea, it still worked.</p>
 			
 			
         </div>
@@ -103,6 +103,31 @@
       </div>
 	  <hr />
 	
+	  <div class="row">
+        <div class="eight columns">
+		  <h3>Audio Transform</h3>
+		    <aside><p>programming, Matlab</p></aside>
+            <p>This is my work-in-progress for a new audio transform. I would like something that has both a high frequency resolution & bandwidth along with a high temporal resolution. By comparison, regular (non-windowed) FFT transforms the entire signal, with no temporal axis. A windowed FFT has a temporal resolution of SIG_LENGTH / WINDOW_LENGTH. A STFT transform (FFT with sliding window) is better, but its temporal resolution is still low-frequency. My transform is inspired by the way ears work, as I believe that is a better space for what I am trying to achieve.</p>
+			<p>As I'm still developing the transform, more information will come later</p>
+			
+        </div>
+		<div class="four columns">
+		  <h3></h3><!--Hack for the top margin alighment without custom CSS rules-->
+			<ul class="block-grid one-up" >
+			  <li>
+			    <a href="assets/images/audio_transform/stft_mod3.png">
+				  <img src="assets/images/audio_transform/thumb/stft_mod3.png" alt="slide image" data-caption="1">
+				</a>
+			  </li>
+			  <li>
+			    <a href="assets/images/audio_transform/Signal.png">
+				  <img src="assets/images/audio_transform/thumb/Signal.png" alt="slide image" data-caption="1">
+				</a>
+			  </li>
+			</ul>
+		</div>
+      </div>
+	  <hr />
 	
       <div class="row">
         <div class="four columns">
@@ -409,7 +434,7 @@
 
   <div class="row">
     <div class="twelve columns">
-	  <p>Site content &copy; 2012 Vladimir Kvitnevskiy</p>
+	  <p>Site content & design &copy; 2012 Vladimir Kvitnevskiy</p>
 	</div>
   </div> 
   
