@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 <meta name="Robots" content="noindex, nofollow">
-<title>Floatbox v5.6 API Reference</title>
+<title>Floatbox v5.7 API Reference</title>
 <style type="text/css">
 body { font-family:Verdana, Arial, Helvetica, sans-serif; line-height: 17px; font-size:13px; background-color:#fafafa; }
 #content { margin:1em 25px; }
@@ -23,7 +23,7 @@ div.separator { height:1px; width:80%; font-size:1px; margin:24px 0; border-colo
 </head>
 <body>
 <div id="content">
-<h2>Floatbox v5.6 - Programmer's API Reference</h2>
+<h2>Floatbox v5.7 - Programmer's API Reference</h2>
 <a href="//floatboxjs.com/">floatboxjs.com</a>
 
 <div id="index" class="separator"></div>
@@ -218,9 +218,11 @@ It activates floatboxed anchors, image cycler sets, enhanced tooltips, context b
 </p><p>
 When dynamically adding floatbox-enabled elements to a page some time after the initial page load,
 you can run fb.activate() to 'light up' that new content.
-Until activated in some manner, floatbox elements on the page will not have behaviours attached and the links will open just like normal links with the browser navigating to the href'd page.
+Until activated in some manner, floatbox elements on the page will not have behaviours attached and the links will open just like normal links with the browser navigating to the href'd page.<br />
+Instead of manually invoking fb.activate() from your code, you can set the 'activateOnClick' option to true and have fb.activate run whenever the main document is clicked or touched.
+See the instructions and the options reference for 'activateOnClick' details.
 </p><p>
-The 'node' parameter is optional.
+fb.activate's 'node' parameter is optional.
 If provided, it should be a node's id or the node object itself that contains the elements requiring activation.
 If the node parameter is not provided, the entire document will be crawled.
 </p><p>
@@ -229,6 +231,7 @@ When you use this function with its 'updateNode' parameter, fb.activate() will b
 </p><p>
 For any other method of dynamically adding new floatbox content,
 your code will have to invoke fb.activate() after the new content is in place or, alternatively,
+set the 'activateOnClick' option, or,
 have an onclick action of <span class="code notranslate">onclick="fb.start( this ); return false;"</span> assigned.<br />
 See the section about dynamically loading floatbox content in <a href="instructions#dynamic">the instructions</a> for examples of using fb.activate with traditional ajax calls, jQuery and ASP.NET UpdatePanels.<br />
 </p>

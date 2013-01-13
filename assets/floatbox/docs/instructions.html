@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 <meta name="Robots" content="noindex, nofollow">
-<title>Floatbox v5.6 Instructions</title>
+<title>Floatbox v5.7 Instructions</title>
 <style type="text/css">
 body { font-family:Verdana, Arial, Helvetica, sans-serif; line-height: 17px; font-size:13px; background-color:#fafafa; }
 #content { margin:1em 25px; }
@@ -23,7 +23,7 @@ div.separator { height:1px; width:80%; font-size:1px; margin:24px 0; border-colo
 </head>
 <body>
 <div id="content">
-<h2>Floatbox v5.6 - Instructions</h2>
+<h2>Floatbox v5.7 - Instructions</h2>
 <a href="http://floatboxjs.com/">floatboxjs.com</a>
 <div id="index" class="separator"></div>
 
@@ -1184,9 +1184,8 @@ For example: <span class="code notranslate">boxColor:#123456|#edca98</span>
 Setting customized colors through options is best done by assigning the options to a class defined in fbClassOptions or the global classOptions in options.js and then placing that class name on the floatboxed links.
 See the Instruction sections on setting page-specific and site-wide options for details.
 </p><p>
-The 'custom' color setting is for creating and using your own customized color scheme via css.
-Look at the top of floatbox.css for settings pertaining to the custom scheme.
-The settings are well documented with comments in the css and allow you to easily modify the default colors.
+The 'custom' colorTheme setting is for creating and using your own customized color scheme and/or control images via css.
+The settings are well documented with comments in custom.css and if you know a bit about setting css rules it will be fairly easy to make the desired appearance modifications.
 The control widget backgrounds such as for the close or prev/next buttons can be replaced with custom background images.
 If you do this, be sure to change the various control widths and heights in the css as described in the comments.
 </p><p>
@@ -1398,6 +1397,11 @@ When floatbox first loads on a page, it runs its fb.activate function to invento
 It also activates any cycler sets, enhanced tooltips, context boxes, and popup thumbnails defined in the content.
 If new content marked up for floatbox behaviour is dynamically added to a page after its initial load, fb.activate needs to be re-invoked to register that new content and assign the event handlers to the new elements.
 </p><p>
+As of version 5.7.0, Floatbox has an 'activateOnClick' option that can be set to 'true' in options.js or fbPageOptions.
+This will cause fb.activate() to be invoked on every mouse click and touch action that occurs on the main page.
+Using activateOnClick is a good strategy for a page that makes a lot of dynamic changes to its Floatbox markup and avoids the need to explictly invoke fb.activate() from your page's code.
+Following are details on how you might explicitly run fb.activate on dynamic pages where activateOnClick is not set.
+</p><p>
 Floatbox's built in fb.ajax() function will automatically run fb.activate against any new content brought in using that function.
 However, you may be using a non-Floatbox AJAX content insertion something like this:<br />
 <span class="blockcode notranslate">
@@ -1419,7 +1423,7 @@ Now your new floatbox anchors will work.
 A jQuery AJAX fetch which launches fb.activate on completion could look like this:
 <span class="blockcode notranslate">
 $.get('someURL.php', function(data) {<br />
-&nbsp;&nbsp;$('.myXhrDiv').html(data);<br />
+&nbsp;&nbsp;$('#myXhrDiv').html(data);<br />
 &nbsp;&nbsp;fb.activate();<br />
 });
 </span>

@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 <meta name="Robots" content="noindex, nofollow">
-<title>Floatbox v5.6 Options</title>
+<title>Floatbox v5.7 Options</title>
 <style type="text/css">
 body { font-family:Verdana, Arial, Helvetica, sans-serif; line-height: 17px; font-size:13px; background-color:#fafafa; }
 #content { margin:1em 25px; }
@@ -23,7 +23,7 @@ div.separator { height:1px; width:80%; font-size:1px; margin:24px 0; border-colo
 </head>
 <body>
 <div id="content">
-<h2>Floatbox v5.6 - Options</h2>
+<h2>Floatbox v5.7 - Options</h2>
 <a href="http://floatboxjs.com/">floatboxjs.com</a>
 
 <div id="index">
@@ -53,7 +53,7 @@ div.separator { height:1px; width:80%; font-size:1px; margin:24px 0; border-colo
 <ul>
 <li>doAnimations - <i>true</i> | false</li>
 <li>mobileDoAnimations - true | <i>false</i></li>
-<li>imageTransition - <i>'crossfade'</i> | 'slide' | 'fade' | 'none'</li>
+<li>imageTransition - <i>'crossfade'</i> | 'slide' | 'shift' | 'fade' | 'none'</li>
 <li>transitionDuration - 0-10 (4)</li>
 <li>overlayFadeDuration - 0-10 (5)</li>
 <li>resizeDuration - 0-10 (3.5)</li>
@@ -222,6 +222,7 @@ div.separator { height:1px; width:80%; font-size:1px; margin:24px 0; border-colo
 <li>framed - true | <i>false</i></li>
 <li>preloadLimit - 'x|y' ('5|1')</li>
 <li>language - <i>'auto'</i> | 'en' | ... (see the languages folder)</li>
+<li>activateOnClick - true | <i>false</i></li>
 <li>floatboxClass - className(s) ('floatbox')</li>
 <li>cyclerClass - className ('fbCycler')</li>
 <li>tooltipClass - className ('fbTooltip')</li>
@@ -357,11 +358,13 @@ Note that if doAnimations is false, mobile animations won't occur regardless of 
 A mobile browser is defined as one that supports touch events and either has a small-format screen or does not have scrollbars.
 </p>
 
-<p><b>imageTransition</b> - <i>'crossfade'</i> | 'slide' | 'fade' | 'none'<br />
+<p><b>imageTransition</b> - <i>'crossfade'</i> | 'slide' | 'shift' | 'fade' | 'none'<br />
 A variety of animations are available when transitioning between two images in a gallery set.
 These transitions will be synchronized with any floatbox resizing that needs to occur such that all animations will complete simultaneously.
-The default animation is to 'crossfade', which fades out the old image while fading in the new one and resizing the floatbox.
-Images can also be made to slide in from the right of box (from the left when navigating backwards in the set) with no opacity fades by setting imageTransition to 'slide'.
+The default transition setting is 'crossfade', which fades out the old image while fading in the new one and resizing the floatbox.
+An imageTransition setting of 'slide' does not alter opacity but instead will slide the current image out of the floatbox and thereby reveal a stationary next image underneath it.
+The 'slide' animation works particularly well in conjunction with touch or mouse swipes on the floatbox content to show the next (or previous) image.
+The 'shift' setting is similar to 'slide' except that instead of being stationary, the new image will slide into the box while the current image slides out, as if the two images were attached at their edges.
 A setting of 'fade' will cause the images to fade to black (or whatever the current colorTheme is), resize the box if necessary, and then fade the new image in from black.
 All transition animations can be turned off by setting imageTransition to 'none', in which case the new images will appear instantly without any transition effects.
 </p>
@@ -1081,6 +1084,12 @@ You can force a particular language by setting it here.
 Doing this will set that language for everyone visiting your site, regardless of where they are coming from.
 </p>
 
+<p><b>activateOnClick</b> ** - true | <i>false</i><br />
+Setting activateOnClick to true will cause Floatbox's fb.activate() API function to run every time a mouse click or touch event occurs on the main document.
+This can be useful as an easy way to 'light up' floatboxed elements that have been dynamically added to a page some time after the page has loaded.
+See the 'Dynamically loading Floatbox content via AJAX, script or UpdatePanel' section of <a href="instructions.html#dynamic">the instructions</a> for more details.
+</p>
+
 <p><b>floatboxClass</b> ** ('floatbox'), <b>cyclerClass</b> ** ('fbCycler'), <b>tooltipClass</b> ** ('fbTooltip'), <b>contextClass</b> ** ('fbContext') - className<br />
 The class names that are used to activate floatbox elements can be changed in order to avoid conflicts with other html and css.
 For example, if the 'floatbox' class is already used for other purposes, the floatboxClass option could be changed to 'floater' or any other unused class name.<br />
@@ -1099,7 +1108,7 @@ Note that if the path relationship between floatbox.css and the graphics folder 
 Implementation and support of Floatbox will be easier if the floatbox folder structure is left alone, floatbox.js is loaded with a standard script element, and these path options are not used.
 </p>
 
-<p>** 'preloadLimit', 'language', and the 4 '*Class' names can not be set as type, class or item options.
+<p>** 'preloadLimit', 'language', 'activateOnClick', and the 4 '*Class' names can not be set as type, class or item options.
 They can be set only in the globalOptions section of options.js or in a page-specific fbPageOptions javascript object.<br />
 *** The 3 '*Path' options can be set only in a fbPageOptions object that is defined prior to the floatbox.js file being loaded.
 </p>
@@ -1139,7 +1148,7 @@ The default value is 'auto' which ideally causes scrollbars to show only if the 
 but in practice some browsers may always show scrollbars anyway.<br />
 Note that the scrolling option can influence Floatbox's auto-measuring and sizing of HTML content.
 If scrolling is set to 'no' and the measureHTML option is set to 'auto', auto-measuring will occur.
-See 'Let floatbox set content height' in <a href="instructions.html#autoheight">the Instructions</a> for more detail.
+See 'Let floatbox set content height' in <a href="instructions.html#autoheight">the instructions</a> for more detail.
 </p>
 
 <p><b>caption, caption2 - string | #hiddenDivId</b><br />
@@ -1159,7 +1168,7 @@ See the "Captions" section of the instructions for details.
 <p><b>header, footer - string | #hiddenDivId</b><br />
 Display transparent-background content immediately above or below the floatbox with the header and footer options.
 These can be set in the same manner as captions described above, and can use direct text, encoded html, or a reference to a hidden div (recommended).
-Although described here in the item-specific section of this Options Reference, like all options header and footer can be assigned globally, per page, by type, and by class name.
+Although described here in the item-specific section of this options reference, like all options header and footer can be assigned globally, per page, by type, and by class name.
 </p>
 
 <p><b>type</b> - 'ajax' | 'video' | 'image' | 'inline' | 'iframe' | 'flash' | 'quicktime' | 'wmp' | 'silverlight' | 'pdf'<br />
@@ -1229,7 +1238,7 @@ This can be used to provide alternate content for javascript-disabled clients.
 
 <p><b>className</b> - string<br />
 The className option provides a mechanism whereby class-based options can be assigned to infoOptions, options passed to the fb.start API function, and enhanced tooltips.
-See the Instructions to learn about classOptions.
+See the instructions to learn about classOptions.
 The className option provides a mechanism to use these classOptions in contexts other than HTML elements that have matching class attributes set.
 Set className to one or more classes that you wish to inherit options from.
 </p>

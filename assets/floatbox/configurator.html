@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Floatbox Configurator (v5.6)</title>
+<title>Floatbox Configurator (v5.7)</title>
 <link rel="stylesheet" type="text/css" href="floatbox.css" />
 <script type="text/javascript" src="floatbox.js"></script>
 <script type="text/javascript">
@@ -24,7 +24,7 @@ fbStuff = {
 	// animations
 		doAnimations: true,  // true|false
 		mobileDoAnimations: false,  // true|false
-		imageTransition: 'crossfade',  // 'crossfade'|'slide'|'fade'|'none'
+		imageTransition: 'crossfade',  // 'crossfade'|'slide'|'shift'|'fade'|'none'
 		transitionDuration: 4,  // 0-10
 		overlayFadeDuration: 5,  // 0-10
 		resizeDuration: 3.5,  // 0-10
@@ -136,7 +136,6 @@ fbStuff = {
 		cyclePauseOnHover: false,  // true|false
 		cycleResumeOnHover: false,  // true|false
 	// general
-		licenseKey: '',  // string
 		addVideoThumb: false,  // false | 'small'|'medium'|'large'
 // 		addPlayButton: '',  // 'small'|'medium'|'large'
 		fetchVideoInfo: true,  // true|false
@@ -155,14 +154,16 @@ fbStuff = {
 		attachTo: '',  // 'click'|elementID
 // 		autoTypes: '',  // 'type1|type2|...' (only on a containing element)
 		zIndex: 11111111,  // base zindex assigned to first box
+		mobileNewWindow: 'auto',  // 'auto'|true|false
 // 		framed: false,  // true|false (only in fbPageOptions)
 		preloadLimit: '5|1',  // 1 for touch devices 5 for non-touch
 		language: 'auto',  // 'auto'|'en'|... (see the languages folder)
-		mobileNewWindow: 'auto',  // 'auto'|true|false
+		activateOnClick: false,  // true|false
 		floatboxClass: 'floatbox',  // the className(s) (or rel) we'll look for on anchors
 		cyclerClass: 'fbCycler',  // className on thumb/img cycler divs
 		tooltipClass: 'fbTooltip',  // className on tooltipped elements
-		contextClass: 'fbContext'  // className on elements with context (menus?) attached
+		contextClass: 'fbContext',  // className on elements with context (menus?) attached
+		licenseKey: '',  // string
 	}
 };
 fbTypeOptions = {
@@ -420,7 +421,7 @@ ul.tabs a {
 
 <body>
 
-<p class="header"><b>Floatbox Configurator (v5.6)</b><br />
+<p class="header"><b>Floatbox Configurator (v5.7)</b><br />
 Use this page to generate global or page-specific floatbox options.<br />
 Set preferences the way you want them,<br />
 click one of the update buttons to generate a globalOptions or fbPageOptions definition,<br />
@@ -553,6 +554,7 @@ Note that there are many item-specific options that are not usually set globally
 		<select id="imageTransition" name="imageTransition">
 		<option value="crossfade">crossfade</option>
 		<option value="slide">slide</option>
+		<option value="shift">shift</option>
 		<option value="fade">fade</option>
 		<option value="none">none</option>
 		</select>
@@ -1226,11 +1228,6 @@ Note that there are many item-specific options that are not usually set globally
 <table><tbody>
 <tr>
 	<td>
-		<label>licenseKey<br />
-		<input type="text" id="licenseKey" name="licenseKey" size="14" />
-		</label>
-	</td>
-	<td>
 		<label>addVideoThumb<br />
 		<select id="addVideoThumb" name="addVideoThumb">
 		<option value="false">false</option>
@@ -1255,13 +1252,13 @@ Note that there are many item-specific options that are not usually set globally
 		</select>
 		</label>
 	</td>
-</tr>
-<tr>
 	<td>
 		<label>altAsCaption<br />
 		<input type="checkbox" id="altAsCaption" name="altAsCaption" />
 		</label>
 	</td>
+</tr>
+<tr>
 	<td>
 		<label>hideObjects<br />
 		<input type="checkbox" id="hideObjects" name="hideObjects" />
@@ -1277,8 +1274,6 @@ Note that there are many item-specific options that are not usually set globally
 		<input type="checkbox" id="showIE6EndOfLife" name="showIE6EndOfLife" />
 		</label>
 	</td>
-</tr>
-<tr>
 	<td>
 		<label>showMagCursor<br />
 		<select id="showMagCursor" name="showMagCursor">
@@ -1288,6 +1283,8 @@ Note that there are many item-specific options that are not usually set globally
 		</select>
 		</label>
 	</td>
+</tr>
+<tr>
 	<td>
 		<label>modal<br />
 		<input type="checkbox" id="modal" name="modal" />
@@ -1303,13 +1300,13 @@ Note that there are many item-specific options that are not usually set globally
 		<input type="checkbox" id="disableScroll" name="disableScroll" />
 		</label>
 	</td>
-</tr>
-<tr>
 	<td>
 		<label>removeScrollbars<br />
 		<input type="checkbox" id="removeScrollbars" name="removeScrollbars" />
 		</label>
 	</td>
+</tr>
+<tr>
 	<td>
 		<label>minFlashVersion<br />
 		<input type="text" id="minFlashVersion" name="minFlashVersion" size="14" />
@@ -1325,11 +1322,20 @@ Note that there are many item-specific options that are not usually set globally
 		<input type="text" id="attachTo" name="attachTo" size="14" />
 		</label>
 	</td>
-</tr>
-<tr>
 	<td>
 		<label>zIndex<br />
 		<input type="text" id="zIndex" name="zIndex" size="14" />
+		</label>
+	</td>
+</tr>
+<tr>
+	<td>
+		<label>mobileNewWindow<br />
+		<select id="mobileNewWindow" name="mobileNewWindow">
+		<option value="auto">auto</option>
+		<option value="true">true</option>
+		<option value="false">false</option>
+		</select>
 		</label>
 	</td>
 	<td>
@@ -1383,12 +1389,8 @@ Note that there are many item-specific options that are not usually set globally
 		</label>
 	</td>
 	<td>
-		<label>mobileNewWindow<br />
-		<select id="mobileNewWindow" name="mobileNewWindow">
-		<option value="auto">auto</option>
-		<option value="true">true</option>
-		<option value="false">false</option>
-		</select>
+		<label>activateOnClick<br />
+		<input type="checkbox" id="activateOnClick" name="activateOnClick" />
 		</label>
 	</td>
 </tr>
@@ -1412,6 +1414,16 @@ Note that there are many item-specific options that are not usually set globally
 		<label>contextClass<br />
 		<input type="text" id="contextClass" name="contextClass" size="14" />
 		</label>
+	</td>
+</tr>
+<tr>
+	<td>
+		<label>licenseKey<br />
+		<input type="text" id="licenseKey" name="licenseKey" size="14" />
+		</label>
+	</td>
+	<td colspan="3">
+		&nbsp;
 	</td>
 </tr>
 </tbody></table>
@@ -1500,11 +1512,13 @@ Note that if doAnimations is false, mobile animations won't occur regardless of 
 A mobile browser is defined as one that supports touch events and either has a small-format screen or does not have scrollbars.
 </p>
 
-<p><b>imageTransition</b> - <i>'crossfade'</i> | 'slide' | 'fade' | 'none'<br />
+<p><b>imageTransition</b> - <i>'crossfade'</i> | 'slide' | 'shift' | 'fade' | 'none'<br />
 A variety of animations are available when transitioning between two images in a gallery set.
 These transitions will be synchronized with any floatbox resizing that needs to occur such that all animations will complete simultaneously.
-The default animation is to 'crossfade', which fades out the old image while fading in the new one and resizing the floatbox.
-Images can also be made to slide in from the right of box (from the left when navigating backwards in the set) with no opacity fades by setting imageTransition to 'slide'.
+The default transition setting is 'crossfade', which fades out the old image while fading in the new one and resizing the floatbox.
+An imageTransition setting of 'slide' does not alter opacity but instead will slide the current image out of the floatbox and thereby reveal a stationary next image underneath it.
+The 'slide' animation works particularly well in conjunction with touch or mouse swipes on the floatbox content to show the next (or previous) image.
+The 'shift' setting is similar to 'slide' except that instead of being stationary, the new image will slide into the box while the current image slides out, as if the two images were attached at their edges.
 A setting of 'fade' will cause the images to fade to black (or whatever the current colorTheme is), resize the box if necessary, and then fade the new image in from black.
 All transition animations can be turned off by setting imageTransition to 'none', in which case the new images will appear instantly without any transition effects.
 </p>
@@ -2154,6 +2168,13 @@ If there is other content on a page that is set higher than this (such as maybe 
 a larger zIndex can be assigned to the floatboxes by setting this option.
 </p>
 
+<p><b>mobileNewWindow</b> - <i>'auto'</i> | true | false<br />
+When set to true, devices with small screens (generally, mobile phones) will open the target content in a new browser window while larger-screened browsers will open the content in a floatbox.
+This is useful when the content to be displayed is too large to handle cleanly on the small device screens.
+Default behaviour ('auto') is to show all all cross-domain iframes and direct-loaded pdf content in a new window on small-screen devices.
+Set mobileNewWindow to false to force content to always show within a floatbox regardless of screen size.
+</p>
+
 <p><b>framed</b> - true | <i>false</i><br />
 Use the framed option to attach floatbox to an iframe or frameset child window.
 This will constrain floatbox to the frame area only instead of having it overlay the entire top document.
@@ -2179,11 +2200,10 @@ You can force a particular language by setting it here.
 Doing this will set that language for everyone visiting your site, regardless of where they are coming from.
 </p>
 
-<p><b>mobileNewWindow</b> - <i>'auto'</i> | true | false<br />
-When set to true, devices with small screens (generally, mobile phones) will open the target content in a new browser window while larger-screened browsers will open the content in a floatbox.
-This is useful when the content to be displayed is too large to handle cleanly on the small device screens.
-Default behaviour ('auto') is to show all all cross-domain iframes and direct-loaded pdf content in a new window on small-screen devices.
-Set mobileNewWindow to false to force content to always show within a floatbox regardless of screen size.
+<p><b>activateOnClick</b> ** - true | <i>false</i><br />
+Setting activateOnClick to true will cause Floatbox's fb.activate() API function to run every time a mouse click or touch event occurs on the main document.
+This can be useful as an easy way to 'light up' floatboxed elements that have been dynamically added to a page some time after the page has loaded.
+See the 'Dynamically loading Floatbox content via AJAX, script or UpdatePanel' section of the Instructions for more details.
 </p>
 
 <p><b>floatboxClass</b> ** ('floatbox'), <b>cyclerClass</b> ** ('fbCycler'), <b>tooltipClass</b> ** ('fbTooltip'), <b>contextClass</b> ** ('fbContext') - className<br />

@@ -12,10 +12,8 @@ fb.options = {
 globalOptions: {
   // Paste your license key between the quotes below, or enter it in the configurator form.
   // (Separate multiple license keys with spaces or commas.)
-  licenseKey: "yms$tW1GyGoP",
-  showIE6EndOfLife: false,
-  enableDragMove: false,
-  enableImageResize: false
+  licenseKey: "",
+  showIE6EndOfLife: false
 },
 
 // childOptions are preferences to be applied only to secondary floatboxes.
