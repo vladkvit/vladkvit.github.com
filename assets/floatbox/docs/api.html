@@ -134,7 +134,8 @@ div.separator { height:1px; width:80%; font-size:1px; margin:24px 0; border-colo
 
 <h5>fb.start ( source, options )</h5>
 <p>
-fb.start creates and invokes a floatbox.<br />
+fb.start creates and invokes a floatbox.
+</p><p>
 The 'source' parameter is overloaded. It can be a URI string (path to the content), a DOM element, an element's id, or a string of HTML.<br />
 The optional 'options' parameter can accept a string of floatbox options formatted the same as for data-fb-options attributes,
 or can accept an associative array (javascript object) of option name:value pairs.
@@ -165,7 +166,8 @@ This allows you to define the entire start action in one associative array, and 
 
 <h5>fb.end ( arg )</h5>
 <p>
-Call fb.end() to close a running floatbox.<br />
+Call fb.end() to close a running floatbox.
+</p><p>
 The 'arg' parameter is optional and is overloaded in terms of functionality.<br />
 If 'arg' is a boolean value of true and multiple floatbox instances are currently open, all instances will be closed.<br />
 If 'arg' is a string it is assumed to be a URL and the base page will attempt to navigate to that URL when the floatbox end completes.
@@ -179,16 +181,18 @@ To navigate to a page on exit: <span class="code notranslate">fb.end( 'somePage.
 <h5>fb.resize ( width, height, left, top, quick )</h5>
 <p>
 Resizes and/or repositions an open floatbox.
+</p><p>
 The 'width' and 'height' parameters can assign specific dimensions or can request measuring and auto-sizing of the floatbox to match new content.<br />
 Positive integers will set the new content dimensions in pixels, not including the box decoration around the content.<br />
 If width and/or height are 0, or not provided, that dimension will be measured and set to the results of the measurement.<br />
 If a dimension is passed -1, that dimension will not change and will remain at its current size while the other dimension is set or measured.
 </p><p>
-The 'left' and 'top' parameters accept the same values as the 'boxLeft' and 'boxTop' options.
-That is, they can be integers giving pixel location relative to the visible browser viewport,
-percentages to move the box a portion of the screen's available free space,
-or 'auto' to re-center the floatbox on the screen.
-When the 'left' and 'top' options are not provided, box positioning is determined by the current values of the 'boxLeft' and 'boxTop' options (which default to 'auto').
+The 'left' and 'top' parameters accept the same values as the 'boxLeft' and 'boxTop' options, or can be set to -1.
+Positive integers assign pixel location relative to the visible browser viewport,
+percentages will move the box a portion of the screen's available free space,
+and 'auto' will re-center the floatbox on the screen.
+If the 'left' or 'top' parameters are -1, the corresponding position will not change and the left and/or top side of the floatbox will remain where it is while re-sizing occurs.
+When the 'left' and 'top' options are not provided, or are 0, box positioning is determined by the current values of the 'boxLeft' and 'boxTop' options (which default to 'auto').
 </p><p>
 The 'quick' option, if set to true, will temporarily turn off resizing animations and instantly jump the box to it's new size and position.
 If the quick option is false or not provided, the animations will be done according to the current value of the 'resizeDuration' option.
@@ -199,12 +203,13 @@ the box can be resized to the new content's width and height with a simple call 
 A specific new width combined with a re-measure of the height can be requested with <span class="code notranslate">fb.resize( 350 );</span><br />
 The width can be held at its current value while the height is set to specific value with <span class="code notranslate">fb.resize( -1, 500 );</span><br />
 The same resizing can be done with a simultaneous positioning of the box in the top-left corner of the screen with <span class="code notranslate">fb.resize( -1, 500, 5, 5 );</span><br />
-A floatbox can be remeasured with its current position held constant and resize animations disabled with a call of <span class="code notranslate">fb.resize( 0, 0, null, null, true );</span><br />
+A floatbox can be remeasured with its current position held constant and resize animations disabled with a call of <span class="code notranslate">fb.resize( 0, 0, -1, -1, true );</span><br />
 </p>
 
 <h5>fb.reload ( source )</h5>
 <p>
-Reloads the content in an already running box.<br />
+Reloads the content in an already running box.
+</p><p>
 Only content of types iframe, image and ajax can be reloaded. Inline, media and direct content cannot be.<br />
 The optional 'source' parameter is a URI path to new content that can replace current box content of the same type without altering or resizing the existing box.<br />
 Standard usage leaves the 'source' parameter empty thereby causing the existing content to be re-fetched.
@@ -249,6 +254,8 @@ Suspends and resumes all cycler thumbnail and image sets (created with the fbCyc
 
 <h5>fb.showItem ( index )</h5>
 <p>
+Use showItem to change the currently displayed image in a gallery set to another member of that set.
+</p><p>
 The index parameter can be a number, or a string of 'next' or 'prev'.
 If it's one of the strings, a gallery set will show the previous or next item in the set, wrapping around the set ends if necessary.<br />
 If a numerical index is provided, the corresponding item from the gallery set will be shown. The first item in a set has an index of 0.<br />
@@ -310,7 +317,8 @@ Details of functions and properties related to instances of multiple floatboxes 
 
 <h5>fb.getInstance ( name )</h5>
 <p>
-Use fb.getInstance to retrieve a reference to a particular floatbox instance when more than one is open simultaneously.<br />
+Use fb.getInstance to retrieve a reference to a particular floatbox instance when more than one is open simultaneously.
+</p><p>
 The 'name' parameter will usually be a name assigned to a floatbox instance through use of the 'instanceName' option.
 The 'name' parameter can also be a numeric index into the fb.instances array.
 (References to all open floatbox instances are captured in the fb.instances array with the first opened instance having an index of zero.)<br />
@@ -484,17 +492,19 @@ Note: All library functions that have a 'node' parameter will accept either a DO
 
 <h5>fb.$ ( id, doc )</h5>
 <p>
-The fb.$ function is short-hand for 'document.getElementById', with extensions.<br />
+The fb.$ function is short-hand for 'document.getElementById', with additional behaviour.
+</p><p>
 If the id parameter is a string, it will return the element that has that id, or null if there is no such element.<br />
 If the id parameter is already an element, that element will be returned.<br />
 The optional 'doc' parameter is for iframe environments and is a specific document element on which to look for the requested id.<br />
 If no 'doc' parameter is passed, each document in a heirarchy of same-domain iframes that have the floatbox code installed will be searched for the requested element,
-starting with the top document.
+starting with the top (base) document.
 </p>
 
 <h5>fb.DOMReady ( func )</h5>
 <p>
 Use fb.DOMReady to register a function to be called when (or after) a document's DOM is fully loaded but before window.onload fires.
+</p><p>
 The single parameter is a function to be exectured at DOMContentLoaded time.<br />
 The fb.DOMReady function supports all browsers, including older versions of IE that do not have built-in support for DOMContentLoaded.
 </p><p>
@@ -507,7 +517,8 @@ whereas fb.DOMReady will immediately execute the passed function if it is called
 fb.removeEvent ( node, action, func | obj)</h5>
 <p>
 These two functions standardize DOM2 event handling across different browsers,
-removing most of the troublesome characteristics of IE's event handlers.<br />
+removing most of the troublesome characteristics of older IE's event handlers.
+</p><p>
 All parameters are required.<br />
 The 'node' parameter is the element (or its id) to attach (or detach) the event handler to.
 The same event handler can be assigned in one go to multiple nodes by passing an array of nodes and/or ids as the node parameter.<br />
@@ -539,7 +550,8 @@ The DOM0 event handlers are standardized in the same way as described for DOM2 e
 
 <h5>fb.stopEvent ( e, stopPropagation, preventDefault )</h5>
 <p>
-fb.stopEvent is a cross-browser way to manage the bubbling (propagation) and default action behaviours for an event.<br />
+fb.stopEvent is a cross-browser way to manage the bubbling (propagation) and default action behaviours for an event.
+</p><p>
 Pass the event you want to block as the first manadatory parameter.<br />
 The optional 'stopPropagation' and 'preventDefault' parameters give control over these specific aspects of the event sequence.
 'stopPropagation' defaults to false while 'preventDefault' has a default value of true,
@@ -551,7 +563,9 @@ For example, to stop the default click behaviour in the example above for addEve
 
 <h5>fb.extend ( objTarget, objSource [, objSource2 ...] )</h5>
 <p>
-fb.extend takes two or more javascript objects as parameters and extends the properties and values of the first object with those from the other objects.<br />
+Merges and duplicates javascript objects.
+</p><p>
+fb.extend takes any number of javascript objects as parameters and extends the properties and values of the first object with those from the other objects.<br />
 The target object is modified in place and is also the return value of the function.<br />
 If passed only a single object in the parameters, fb.extend will return a duplicate copy of that object.<br />
 <span class="code notranslate">fb.extend( myObj, yourObj )</span> will copy yourObj's name:value pairs into myObj.<br />
@@ -561,7 +575,8 @@ If passed only a single object in the parameters, fb.extend will return a duplic
 
 <h5>fb.executeJS ( strURI, callback )</h5>
 <p>
-Use fb.executeJS to dynamically load and execute an external javascript file.<br />
+Use fb.executeJS to dynamically load and execute an external javascript file.
+</p><p>
 The javascript file can come from any domain (cross-domain scripting restrictions are not in effect).<br />
 The optional callback function will be fired after the external javascript has completed execution.<br />
 fb.executeJS can be useful for performing 'lazy loads' of javascript files in a document's window after the page has been rendered,
@@ -580,7 +595,8 @@ For example, a script invoked with <span class="code notranslate">fb.executeJS('
 
 <h5>fb.getFormValues ( source )</h5>
 <p>
-Returns an associative array of all the name:value pairs for the elements of a form.<br />
+Returns an associative array of all the name:value pairs respresenting the elements of a form.
+</p><p>
 The source parameter can be a form DOM element, a form's name, or a form's id.<br />
 The getFormValues function provides correct form handling as per the W3C forms recommendations
 and properly handles empty and missing values, radio buttons and user defined input types.<br />
@@ -604,7 +620,8 @@ The passed string is first run through fb.decodeHTML to translate encoded HTML e
 
 <h5>fb.preload ( src, callback )</h5>
 <p>
-You can borrow floatbox's image preloader if you like.
+Fetches one or more images into the browser's cache.
+</p><p>
 Pass fb.preload the source path for the image to preload as a string.
 Or, pass an array of source path strings for images to be preloaded.<br />
 If the optional callback function is provided as the second parameter, that function will be invoked when the image preload completes.<br />
@@ -615,7 +632,8 @@ If src is an array, callback is called after the last image loads.
 <h5>fb.printNode ( node, style )</h5>
 <p>
 Use printNode to display a print dialog to your users that will print only the contents of a particular node,
-rather than printing the full page.<br />
+rather than printing the full page.
+</p><p>
 The printNode function accepts two arguments, both of which are optional.<br />
 The node parameter accepts either a DOM node or an element's id string.
 If node is null, the contents of fb.topInstance.fbContent will be printed.<br />
@@ -626,14 +644,18 @@ or can be the path to a css file that contains the css definitions to be applied
 
 <h5>fb.getElementsByClassName ( className[s], node )</h5>
 <p>
-Returns an array of elements within 'node' that have a class name of 'className'.<br />
-The className parameter can be a simple string or an array of strings. If an array, all elements that have any of the requested classNames will be returned.<br />
-The 'node' parameter is optional, can be provided as an element reference or an id string, and will default to the &lt;html&gt; element if not given.
+Returns an array of elements within 'node' that have a class name of 'className'.
+</p><p>
+The className parameter can be a simple string or an array of strings.
+If an array, all elements that have any of the requested classNames will be returned.<br />
+The 'node' parameter is optional, can be provided as an element reference or an id string,
+and will default to the &lt;html&gt; element if not given.
 </p>
 
 <h5>fb.attr ( node, name, val )</h5>
 <p>
 Reads, sets, or removes an attribute from an element.
+</p><p>
 The node parameter can be an actual element reference or an element's id.
 Pass null to the val parameter to remove the named attribute.
 If val is not provided (is undefined), fb.attr will return the current value of the named attribute, or the empty string if the attribute is not present.
@@ -642,7 +664,8 @@ If val is neither null nor undefined, the named attribute will be assigned the p
 
 <h5>fb.getStyle ( node, property, integerize )</h5>
 <p>
-Returns the cascaded or computed (currently active) style for a given element.<br />
+Returns the cascaded or computed (currently active) style for a given element.
+</p><p>
 The optional 'property' parameter is any css property. You can use either the css or camelCase property syntax (i.e., 'font-size' or 'fontSize').<br />
 If 'property' is not passed, the return value will be a cssText string of all effective styles for the referenced node in the form 'property1: value1; property2: value2;...propertyN: valueN;'.<br />
 If the 3rd parameter is 'true', the return value will be an integer.
@@ -683,7 +706,8 @@ alert( 'browser screen is ' + viewport.width + ' wide and ' + viewport.height + 
 
 <h5>fb.getLayout ( node, local )</h5>
 <p>
-Use getLayout to get the position and dimensions of any node (or image area element) on your page.<br />
+Use getLayout to get the position and dimensions of any node (or image area element) on a page.
+</p><p>
 getLayout accepts a DOM node or an element's id string and returns an associative array containing the values 'left', 'top', 'right', 'bottom', 'width' and 'height'.<br />
 Coordinates a screen-based, not document coordinates. To get document coordinates, add in the current page scroll values.<br />
 If the optional second parameter is true and the node is inside an iframe, the returned 'left', 'top', 'right' and 'bottom' coordinates will be relative to that iframe's window, otherwise the coordinates are relative to the top page's viewport.
@@ -694,7 +718,8 @@ The getLayout function is similar to the native getBoundingClientRect function e
 <h5>fb.getIframeDocument ( node )<br />
 fb.getIframeWindow ( node, allowCrossDomain )</h5>
 <p>
-These functions return an iframe's document object and window object respectively.<br />
+These functions return an iframe's document object and window object respectively.
+</p><p>
 'node' is an optional parameter.
 If provided, it must be an iframe element or the iframe element's id.
 The iframe does not have to be inside a floatbox.<br />
@@ -714,7 +739,8 @@ A simple example; get the window object of the iframe in the only running floatb
 
 <h5>fb.nodeContains ( parentNode, childNode )</h5>
 <p>
-fb.nodeContains returns true or false based on whether the DOM element 'childNode' is contained inside the 'parentNode' element.<br />
+fb.nodeContains returns true or false based on whether the DOM element 'childNode' is contained inside the 'parentNode' element.
+</p><p>
 Both parentNode and childNode are mandatory arguments and can be either the actual DOM element or a string id value that identifies the element.<br />
 If parentNode and childNode are the same node, true is returned.<br />
 fb.nodeContains will 'see through' iframes.
@@ -723,21 +749,23 @@ That is, if childNode is inside an iframe and that iframe is inside parentNode, 
 
 <h5>fb.hasAttribute ( node, attribute )</h5>
 <p>
-Returns true or false based on whether the DOM element 'node' has 'attribute' set in its tag.<br />
-If the node's attribute is set to an empty string, the function still returns true.<br />
+Returns true or false based on whether the DOM element 'node' has 'attribute' set in its tag.
+</p><p>
 The node parameter can be a DOM element or the string id of an element.
+If the attribute is present on the node, even if set to an empty string, the function will return true.
 </p>
 
 <h5>fb.getOuterHTML ( node )</h5>
 <p>
-Not all browsers support the outerHTML property.
+Not all browsers support the outerHTML property on elements.
 fb.getOuterHTML will return the outerHTML (innerHTML plus the element's own markup) for any element in all browsers.
 </p>
 
 <h5>fb.setInnerHTML ( node, html )</h5>
 <p>
 This is a safe way to assign innerHTML to any element.
-It works reliably on both text/html and application/xhtml-xml pages.<br />
+It works reliably on both text/html and application/xhtml-xml pages.
+</p><p>
 The 'html' parameter is optional and defaults to the empty string.
 Applying the empty string clears node of all its existing innerHTML.<br />
 If direct assignment of innerHTML works, it is used (it's a lot quicker).
@@ -753,15 +781,17 @@ fb.decodeHTML reverses that process and also decodes &amp;apos; to a single quot
 
 <h5>fb.typeOf ( thing )</h5>
 <p>
-The fb.typeOf extends javascript's builtin 'typeof' operator by resolving ambiguous 'object' return values and handling window objects.<br />
+The fb.typeOf function extends javascript's builtin 'typeof' operator by resolving and correcting ambiguous 'object' return values.
+</p><p>
 The return value will be one of 'number', 'string', 'boolean', 'object', 'array', 'function', 'date', 'NaN', 'undefined', 'null', 'node', 'window' or 'regexp'.<br />
 Note that IE (all versions) has major problems handling dynamically created and destroyed windows inside iframes.
-fb.typeOf will detect a tomb-stoned window in IE and return a value of 'null' for it.
+fb.typeOf will detect a tombstoned window in IE and return a value of 'null' for it.
 </p>
 
 <h5>fb.forEach ( object, function, all )</h5>
 <p>
 Use fb.forEach to execute a function against each member of an associative array (javascript object).
+</p><p>
 The function takes two mandatory parameters:
 object is a javascript object, array or object-like entity and function is a function which will receive two parameters of the 'name' and 'value' for each entry in the object.<br />
 Normally, fb.forEach invokes the function only for properties for which hasOwnProperty is true.
@@ -783,9 +813,11 @@ fb.forEach( myObject, function( key, val ) {<br />
 &nbsp;&nbsp;&nbsp;&nbsp; minVersion: strVersion<br />
 } )</h5>
 <p>
-fb.flashObject is a full-featured, but simple to use, script component that adds flexible cross-browser flash objects to your page.<br />
-Because the flash objects are created from external script they will not be subject to Firefox and Opera's annoying (and inconsistent) "click to activate" behaviour.<br />
-fb.flashObject supports alternate content, Flash version checking and provisioning of all Flash parameters.
+A full-featured, but simple to use, script component that adds flexible cross-browser Flash objects to a page.
+</p><p>
+fb.flashObject can be used as a reliable and safe alternative to SWFObject, removing the need to have both scripts on the same page.
+It supports alternate content, Flash version checking and provisioning of all Flash parameters.<br />
+Because the flash objects are created from external script they will not be subject to Firefox and Opera's annoying (and inconsistent) "click to activate" behaviour.
 </p>
 <ul>
 <li><b>source</b> is the path to the swf file.
@@ -793,10 +825,10 @@ Allowed aliases for 'source' are 'url', 'uri' and 'href'.</li>
 <li><b>width</b> and <b>height</b> are the dimensions of the flash object in pixels.</li>
 <li><b>params</b> (optional) is either an associative array or a string of parameters to be assigned.<br />
 Note that params can also be passed as name=value pairs in a querystring appended to the source URL.<br />
-The default parameters in object notation form are <span class="code notranslate">{ wmode:'opaque', scale:'exactfit', play:'true', allowFullScreen:'true', allowScriptAccess:'always', quality:'high' }</span>
-or, equivalently as an options string, <span class="code notranslate">'wmode:opaque scale:exactfit play:true allowFullScreen:true allowScriptAccess:always quality:high'</span>
-or, as a querystring to be placed on the source path, <span class="code notranslate">'wmode=opaque&amp;scale=exactfit&amp;play=true&amp;allowFullScreen=true&amp;allowScriptAccess=always&amp;quality=high'</span><br />
-(Please see <a href="//kb2.adobe.com/cps/127/tn_12701.html" target="_blank">//kb2.adobe.com/cps/127/tn_12701.html</a> for a complete list of available flash parameters.)
+The default parameters in object notation form are <span class="code notranslate">{ allowFullScreen:'true', allowScriptAccess:'always', loop:'false', quality:'autohigh', scale:'exactfit', wmode:'opaque' }</span>
+or, equivalently as an options string, <span class="code notranslate">'allowFullScreen:true allowScriptAccess:always loop:false quality:autohigh scale:exactfit wmode:opaque'</span>
+or, as a querystring to be placed on the source path, <span class="code notranslate">'allowFullScreen=true&amp;allowScriptAccess=always&amp;loop=false&amp;quality=autohigh&amp;scale=exactfit&amp;wmode=opaque'</span><br />
+(Please see <a href="http://helpx.adobe.com/flash/kb/flash-object-embed-tag-attributes.html" target="_blank">http://helpx.adobe.com/flash/kb/flash-object-embed-tag-attributes.html</a> for a complete list of available flash parameters.)
 </li>
 <li><b>node</b> is an optional parameter that can be a DOM element (normally a span or div) or the string id of an element.
 If given, the flash object will be inserted inside the node.

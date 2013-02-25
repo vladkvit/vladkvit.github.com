@@ -142,6 +142,7 @@ div.separator { height:1px; width:80%; font-size:1px; margin:24px 0; border-colo
 <li>outsideClickCloses - <i>true</i> | false</li>
 <li>closeOnClick - true | <i>false</i></li>
 <li>enableKeyboardNav - <i>true</i> | false</li>
+<li>enableSwipeNav - <i>true</i> | false</li>
 </ul>
 </li>
 
@@ -609,8 +610,10 @@ With this option you can move the nav controls to the center of the top or botto
 </p>
 
 <p><b>enableDragMove</b> - <i>true</i> | false<br />
-If true, a floatbox can be dragged around the screen by holding down the left mouse button on the floatbox frame outside of the main content area.
+If true, a floatbox can be dragged around the screen by holding down the left mouse button on the floatbox frame outside of the main content area,
+or on a displayed image (but not html or video content).
 On mobile touch devices, drag-moving works with a single-finger move gesture.
+If enableSwipeNav is set to true (its default) touch swipes on image content will not move the floatbox.
 For non-modal floatboxes (where the modal option is set to false) drag-moving is always enabled regardless of the value set for enableDragMove.
 </p>
 
@@ -715,7 +718,12 @@ When set for images that have the navigation overlay active (navType = 'overlay'
 </p>
 
 <p><b>enableKeyboardNav</b> - <i>true</i> | false<br />
-Enables or disables the keyboard handler for prev, next, pause/play, resize and close actions.
+Enables or disables the keyboard handler for previous/next, pause/play, resize and close actions.
+</p>
+
+<p><b>enableSwipeNav</b> - <i>true</i> | false<br />
+Enables or disables use of a touch swipe gesture to navigate to previous or next images in a gallery set.
+This works especially well with 'imageTransition' set to 'slide'.
 </p>
 
 <p><a href="#index">Back to Index</a></p>
@@ -933,7 +941,7 @@ This option is ignored on mouse-less Mobile devices where the cyclers will alway
 <h3>General</h3>
 
 <p><b>addVideoThumb</b> - 'small' | 'medium' | 'large'<br />
-Floatbox can fetch video thumbnails from YouTube, Vimeo and DailyMotion and auto-insert these thumbnails into floatboxed anchors that reference videos from these services.
+Floatbox can fetch video thumbnails from YouTube and Vimeo and can auto-insert these thumbnails into floatboxed anchors that reference videos from these services.
 The size of the thumbnail image is based on the value of the addVideoThumb option.
 Setting addVideoThumb on any anchor other than one that references a video from one of the three supported services will have no effect.
 </p>
@@ -945,7 +953,7 @@ Use the addPlayButton to show a button on standard thumbnails or to change the b
 </p>
 
 <p><b>fetchVideoInfo</b> - <i>true</i> | false<br />
-When videos from YouTube, Vimeo or DailyMotion are configured to show in a floatbox,
+When videos from YouTube or Vimeo are configured to show in a floatbox,
 the API services of those providers will be queried to fetch useful information about the video such as the title and default size.
 (YouTube unfortunately does not provide size info.)
 If you prefer to not incur the network overhead of these API queries and instead provide explicit size and caption info for your videos, set fetchVideoInfo to false.

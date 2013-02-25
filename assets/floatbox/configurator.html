@@ -97,6 +97,7 @@ fbStuff = {
 		outsideClickCloses: true,  // true|false
 		closeOnClick: false,  // true|false
 		enableKeyboardNav: true,  // true|false
+		enableSwipeNav: true,  // true|false
 	// galleries
 		navType: 'both',  // 'overlay'|'button'|'both'|'none'
 		navOverlayWidth: 30,  // 0-50
@@ -1014,9 +1015,16 @@ Note that there are many item-specific options that are not usually set globally
 		<input type="checkbox" id="enableKeyboardNav" name="enableKeyboardNav" />
 		</label>
 	</td>
+	<td>
+		<label>enableSwipeNav<br />
+		<input type="checkbox" id="enableSwipeNav" name="enableSwipeNav" />
+		</label>
+	</td>
+<!-- 
 	<td colspan="1">
 		&nbsp;
 	</td>
+ -->
 </tr>
 </tbody></table>
 </div>
@@ -1748,8 +1756,10 @@ With this option you can move the nav controls to the center of the top or botto
 </p>
 
 <p><b>enableDragMove</b> - <i>true</i> | false<br />
-If true, a floatbox can be dragged around the screen by holding down the left mouse button on the floatbox frame outside of the main content area.
+If true, a floatbox can be dragged around the screen by holding down the left mouse button on the floatbox frame outside of the main content area,
+or on a displayed image (but not html or video content).
 On mobile touch devices, drag-moving works with a single-finger move gesture.
+If enableSwipeNav is set to true (its default) touch swipes on image content will not move the floatbox.
 For non-modal floatboxes (where the modal option is set to false) drag-moving is always enabled regardless of the value set for enableDragMove.
 </p>
 
@@ -1849,7 +1859,12 @@ When set for images that have the navigation overlay active (navType = 'overlay'
 </p>
 
 <p><b>enableKeyboardNav</b> - <i>true</i> | false<br />
-Enables or disables the keyboard handler for prev, next, pause/play, resize and close actions.
+Enables or disables the keyboard handler for previous/next, pause/play, resize and close actions.
+</p>
+
+<p><b>enableSwipeNav</b> - <i>true</i> | false<br />
+Enables or disables use of a touch swipe gesture to navigate to previous or next images in a gallery set.
+This works especially well with 'imageTransition' set to 'slide'.
 </p>
 
 <p><b>navType</b> - 'overlay' | 'button' | <i>'both'</i> | 'none'<br />

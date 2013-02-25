@@ -12,7 +12,7 @@
 		choicePath = 'http://www.browserchoice.eu/BrowserChoice/browserchoice_' + choiceLang + '.htm',
 		choiceHeight = /bg|de|el/.test(language) ? 456 : 420;
 
-	if (fb.jsGet['force'] || (new Date()).getFullYear() < 2014 && self == top && !/fbIE6Shown=.+/.test(document.cookie)) {
+	if (fb.jsGet && fb.jsGet['force'] || (new Date()).getFullYear() < 2014 && self == top && !/fbIE6Shown=.+/.test(document.cookie)) {
 	// direct load html and use a javascript object for the options parameter
 		fb.start(
 		// source
