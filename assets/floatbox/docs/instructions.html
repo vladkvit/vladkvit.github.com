@@ -44,7 +44,7 @@ div.separator { height:1px; width:80%; font-size:1px; margin:24px 0; border-colo
 <li><a href="#type">File &amp; content types</a></li>
 <li><a href="#image">Images: galleries and slideshows</a></li>
 <li><a href="#html">HTML content: iFrames, AJAX, inline DIVs &amp; direct</a></li>
-<li><a href="#video">Video: YouTube, Vimeo, DailyMotion &amp; iFrame video</a></li>
+<li><a href="#video">Video: YouTube, Vimeo &amp; iFrame video</a></li>
 <li><a href="#multimedia">Multimedia: Flash, Silverlight, QuickTime &amp; Windows Media</a></li>
 <li><a href="#pdf">PDF &amp; Scribd.com</a></li>
 <li><a href="#autoheight">Let floatbox set content height</a></li>
@@ -596,15 +596,15 @@ And one example of direct HTML in an API call:<br />
 </p>
 
 <div id="video" class="separator"></div>
-<h4>Video: YouTube, Vimeo, DailyMotion &amp; iFrame video</h4>
+<h4>Video: YouTube, Vimeo &amp; iFrame video</h4>
 <p>
-YouTube, Vimeo and DailyMotion offer video embedding services as iframe content rather than traditional flash-based object/embed elements.
+YouTube and Vimeo offer video embedding services as iframe content rather than traditional flash-based object/embed elements.
 This allows delivery of a format suitable for the platform being used - e.g., flash content for desktop browsers, HTML5 video for iPhones and other non-flash agents.
 When showing videos from these online services, Floatbox will use the iframe content format, and thus reap the benefits of its flexibility.
 </p><p>
 Floatbox will also query the API services of these video providers and fetch information that can be used to auto-assign captions, determine default video dimensions, and get references to thumbnails that can be auto-inserted into links to the videos.
 </p><p>
-A quick way to understand Floatbox's video service capabilities, and to learn how to configure and use these capabilities, is to check out the 'iframed video embeds' section of the 'Multimedia' tab on <a href="//floatboxjs.com/demo">the demo page</a>.
+A quick way to understand Floatbox's video service capabilities, and to learn how to configure and use these capabilities, is to check out the 'iframed video embeds' section of the 'Multimedia' tab on <a href="demo">the demo page</a>.
 Here are some pointers on setting up video:
 <ul>
 <li>Link to an online video from one of these providers using the URL that you use to view the video on their site.
@@ -612,11 +612,10 @@ For example:
 <ul>
 <li>YouTube: <span class="code notranslate">href="//www.youtube.com/watch?v=Xorau81YT20"</span> (or <span class="code notranslate">href="//youtu.be/Xorau81YT20"</span>)</li>
 <li>Vimeo: <span class="code notranslate">href="//vimeo.com/1211060"</span></li>
-<li>DailyMotion: <span class="code notranslate">href="//www.dailymotion.com/video/x2hlmy"</span></li>
 </ul></li>
 <li>If a caption is not assigned in the Floatbox options, the video title will be retrieved from the service's API and used as the caption.
 For no caption, set <span class="code notranslate">caption:null</span></li>
-<li>If width and height are not assigned in the Floatbox options, the native size of Vimeo and DailyMotion videos will be retrieved from the APIs and used.
+<li>For Vimeo, if width and height are not assigned in the Floatbox options, the native video dimensions will be retrieved from the Vimeo API and used.
 Unfortunately, YouTube does not see fit to expose sizing information to their javascript API service.</li>
 <li>Floatbox can auto-insert a thumbnail image into your anchor elements, complete with an overlayed play button.
 Use the 'addVideoThumb' and 'addPlayButton' options for this.
@@ -624,7 +623,7 @@ See the Options Reference and the demo page example.</li>
 </ul>
 </p><p>
 While somewhat complex, you can create your own locally served video sources to be presented as iframe embeds in Floatbox.
-An excellent guide for doing this can be found at <a href="http://diveintohtml5.info/video.html">http://diveintohtml5.info/video.html</a>.
+An excellent guide for doing this can be found at <a href="//diveintohtml5.info/video.html">//diveintohtml5.info/video.html</a>.
 You may also want to use an iframe source for videos if you need more control over presentation or handling than direct-loading with a plugin will provide.
 To show an iframe video embed of your own, or one from a service other than the three discussed here, point the href to the iframe source and assign "type:video" in the options.
 </p><p>
@@ -648,9 +647,9 @@ If the required plugin is not available on the client browser, floatbox will dis
 Both Windows Media Player and Quicktime can display content of type mpg, mpeg, avi, m1v and mpe.
 For these file types, the visitor's browser will be queried for available plugins and the video will be shown with whichever plugin is present.
 </p><p>
-For flash content, floatbox assigns the following parameter default values: wmode=window, allowfullscreen=true, allowscriptaccess=always, scale=exactfit, play=true, quality=high.
-You can over-ride these plus 'bgcolor', 'base', 'menu' and 'salign' by providing new values in the href url's querystring.<br />
-e.g., <span class="code notranslate">&lt;a href="myflash.swf?wmode=opaque&amp;amp;bgcolor=#ffffff&amp;amp;scale=default" class="floatbox" data-fb-options="width:320 height:240"&gt;...&lt;/a&gt;</span><br />
+For flash content, floatbox assigns the following parameter default values: allowfullscreen=true, allowscriptaccess=always, loop=false, quality=autohigh, scale=exactfit, wmode=opaque.
+You can over-ride these plus 'base', 'bgcolor', 'fullScreenAspectRatio', 'menu', 'play' and 'salign' by providing new values in the href url's querystring.<br />
+e.g., <span class="code notranslate">&lt;a href="myflash.swf?wmode=direct&amp;amp;bgcolor=#ffffff&amp;amp;scale=default" class="floatbox" data-fb-options="width:320 height:240"&gt;...&lt;/a&gt;</span><br />
 </p><p>
 If your flash object requires flashvars to be set, you can put these flashvars in the href url's querystring.
 Flash always treats flashvars and querystring vars equivalently and it doesn't matter in which location the settings appear.
