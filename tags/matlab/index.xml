@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Matlab on vladkvit.github.io</title>
+    <link>http://localhost:1313/tags/matlab/</link>
+    <description>Recent content in Matlab on vladkvit.github.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/tags/matlab/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Audio Transform</title>
+      <link>http://localhost:1313/programming/audiotransform/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/programming/audiotransform/</guid>
+      <description>&lt;p&gt;Fooling around with wavelet-like transforms. I would like something that has both a high frequency resolution &amp;amp; bandwidth along with a high temporal resolution for high frequencies. By comparison, regular (non-windowed) FFT transforms the entire signal, with no temporal axis. A windowed FFT has a temporal resolution of SIG_LENGTH / WINDOW_LENGTH. A STFT transform (FFT with sliding window) is better, but its temporal resolution is still low-frequency. My transform is inspired by the way ears work, as I believe that is a better space for what I am trying to achieve. Constant Q transforms / Morlet wavelet transform solve this problem on some level as well.&lt;/p&gt;
+
+&lt;p&gt;The top picture is the transform of the signal in the bottom picture (two sines added together).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Denoising</title>
+      <link>http://localhost:1313/programming/denoising/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/programming/denoising/</guid>
+      <description>&lt;p&gt;In my fourth year, there was an assignment dealing with different types of denoising. One of them was black-white grain noise, so I made a shader that only resampled those pixels. I was quite impressed with the result.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Mars Rover Webcam Pano</title>
+      <link>http://localhost:1313/programming/marsroverpano/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/programming/marsroverpano/</guid>
+      <description>&lt;p&gt;I helped out with UW&#39;s &lt;a href=&#34;http://www.spacesoc.uwaterloo.ca/rover/&#34;&gt;Mars Rover team&lt;/a&gt;. One of the things I did was try to get a merged view of the webcams that were on the rover. Since there wasn&#39;t much time before the competition (and I had a huge workload during that semester), I didn&#39;t have time to try any fancy approaches (RANSAC), and approximated with an affine transform. This didn&#39;t end up being used for the rover, as anything other than the ground would diverge.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Rasterization with Perspective-correct Texturing</title>
+      <link>http://localhost:1313/programming/rasterizationmatlab/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/programming/rasterizationmatlab/</guid>
+      <description>&lt;p&gt;A friend of mine wrote a simple 2.5D texture renderer using an algorithm from the Doom &amp; Quake era. I whipped up a Matlab script to see how much difference would a &#34;correct&#34; algoritm make.&lt;/p&gt;
+&lt;p&gt;The script takes in any 4 verteces and renders the texture over them with a wide (90*) FOV.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://localhost:1313/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/programming/raytracer/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/programming/compiler/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/programming/quadcopter_v1/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/mainpages/programming/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/artistic/m5/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/programming/audiotransform/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tinkering/thinkpad/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/artistic/e24/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/mainpages/artistic/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/artistic/videos/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/mainpages/tinkering/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/programming/shading/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/artistic/doodles/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/programming/gamewired/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/programming/rasterizationmatlab/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/programming/kirsch/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/programming/denoising/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/programming/cs488finalproj/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/programming/tetris/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/programming/rasterization2/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/programming/m68k_gdb/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/programming/picturezoom/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/programming/marsroverpano/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/programming/teensy/</loc>
+  </url>
+  
+</urlset>

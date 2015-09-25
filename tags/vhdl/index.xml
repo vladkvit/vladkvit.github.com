@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vhdl on vladkvit.github.io</title>
+    <link>http://localhost:1313/tags/vhdl/</link>
+    <description>Recent content in Vhdl on vladkvit.github.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/tags/vhdl/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Kirsch Edge Detection</title>
+      <link>http://localhost:1313/programming/kirsch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/programming/kirsch/</guid>
+      <description>&lt;p&gt;In my ECE327 course, the final project was to implement a Kirsch Edge Detector in VHDL for an FPGA. &lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

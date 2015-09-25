@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programmings on vladkvit.github.io</title>
+    <link>http://localhost:1313/programming/</link>
+    <description>Recent content in Programmings on vladkvit.github.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/programming/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Raytracer</title>
+      <link>http://localhost:1313/programming/raytracer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/programming/raytracer/</guid>
+      <description>&lt;p&gt;I wrote my raytracer as a part of my &lt;a href=&#34;https://www.student.cs.uwaterloo.ca/~cs488/&#34;&gt;CS488&lt;/a&gt; Graphics course.
+It&amp;rsquo;s pretty straight-forward: single-threaded, non-AA non-accelerated raytracer. It renders polygons and spheres.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Parser</title>
+      <link>http://localhost:1313/programming/compiler/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/programming/compiler/</guid>
+      <description>&lt;p&gt;My work-in-progress compiler. So far I have a working SLR(1) parser for any BNF grammar and a simple lexer. Github code &lt;a href=&#34;https://github.com/vladkvit/parser_mirror&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Quadcopter</title>
+      <link>http://localhost:1313/programming/quadcopter_v1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/programming/quadcopter_v1/</guid>
+      <description>&lt;p&gt;I sponsored and did quite a bit of work to help with my brother&amp;rsquo;s quadcopter when he was back in highschool. &lt;a href=&#34;https://github.com/larrykvit/Motion_Detection_Suite&#34;&gt;Here&amp;rsquo;s&lt;/a&gt; the code Github page.&lt;/p&gt;
+
+&lt;p&gt;The basic idea was to try using a tiny x86 board with TCP/IP over WiFi, and a Ground Control Station. We used &lt;a href=&#34;http://qgroundcontrol.org/&#34;&gt;QGroundControl&lt;/a&gt; as the GCS. We were using ESCs flashed with SimonK, a YEI 500Hz AHRS, and a Maestro USB-PWM adapter. Although using x86 and custom-writing the flight control software wasn&amp;rsquo;t a good idea, in retrospect, it still sort of worked.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Audio Transform</title>
+      <link>http://localhost:1313/programming/audiotransform/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/programming/audiotransform/</guid>
+      <description>&lt;p&gt;Fooling around with wavelet-like transforms. I would like something that has both a high frequency resolution &amp;amp; bandwidth along with a high temporal resolution for high frequencies. By comparison, regular (non-windowed) FFT transforms the entire signal, with no temporal axis. A windowed FFT has a temporal resolution of SIG_LENGTH / WINDOW_LENGTH. A STFT transform (FFT with sliding window) is better, but its temporal resolution is still low-frequency. My transform is inspired by the way ears work, as I believe that is a better space for what I am trying to achieve. Constant Q transforms / Morlet wavelet transform solve this problem on some level as well.&lt;/p&gt;
+
+&lt;p&gt;The top picture is the transform of the signal in the bottom picture (two sines added together).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Specular &#43; Diffuse Shading</title>
+      <link>http://localhost:1313/programming/shading/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/programming/shading/</guid>
+      <description>&lt;p&gt;An implementation of Phong shading. &lt;a href=&#34;https://www.youtube.com/watch?v=btRh_7UlCwU&#34;&gt;Video here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Game, Wired</title>
+      <link>http://localhost:1313/programming/gamewired/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/programming/gamewired/</guid>
+      <description>&lt;p&gt;This is from back when I was in highschool. It was my entry for &lt;a href=&#34;http://jayisgames.com&#34;&gt;JayIsGames&lt;/a&gt;&amp;rsquo;s very first CGDC competition. It&amp;rsquo;s just one level. Try out the game &lt;a href=&#34;http://jayisgames.com/cgdc1/?puzzleID=17&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Rasterization with Perspective-correct Texturing</title>
+      <link>http://localhost:1313/programming/rasterizationmatlab/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/programming/rasterizationmatlab/</guid>
+      <description>&lt;p&gt;A friend of mine wrote a simple 2.5D texture renderer using an algorithm from the Doom &amp; Quake era. I whipped up a Matlab script to see how much difference would a &#34;correct&#34; algoritm make.&lt;/p&gt;
+&lt;p&gt;The script takes in any 4 verteces and renders the texture over them with a wide (90*) FOV.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Kirsch Edge Detection</title>
+      <link>http://localhost:1313/programming/kirsch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/programming/kirsch/</guid>
+      <description>&lt;p&gt;In my ECE327 course, the final project was to implement a Kirsch Edge Detector in VHDL for an FPGA. &lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Denoising</title>
+      <link>http://localhost:1313/programming/denoising/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/programming/denoising/</guid>
+      <description>&lt;p&gt;In my fourth year, there was an assignment dealing with different types of denoising. One of them was black-white grain noise, so I made a shader that only resampled those pixels. I was quite impressed with the result.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>CS488 Final Project</title>
+      <link>http://localhost:1313/programming/cs488finalproj/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/programming/cs488finalproj/</guid>
+      <description>&lt;p&gt;This is my final project for the CS488 Graphics course. It has OpenGL rendering a few cubes with specular+diffuse shading and parallax mapping. Originally, the idea was to get a simulated windowing environment, but there&#39;s never enough time.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tetris</title>
+      <link>http://localhost:1313/programming/tetris/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/programming/tetris/</guid>
+      <description>&lt;p&gt;I wrote a functional 3D-rendered Tetris game as a part of my CS488 Graphics course. The game is still &#34;flat&#34;, it&#39;s just rendered using cubes in OpenGL. Most of the game logic was provided.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Software Rasterization</title>
+      <link>http://localhost:1313/programming/rasterization2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/programming/rasterization2/</guid>
+      <description>&lt;p&gt;As a part of my CS488 Graphics course, I wrote a software implementation of edge rasterization. Features a full projection matrix, screen clipping, frustum culling, etc + object transformation. The 2 RGB gnomons represent the model-space and world-space. A line drawing API was given.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>M68K GDB Stub</title>
+      <link>http://localhost:1313/programming/m68k_gdb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/programming/m68k_gdb/</guid>
+      <description>&lt;p&gt;As part of ECE354, each student grouped up into a team and wrote a RTOS for the Motorola 68000 CPU / Coldfire board. The first two weeks of my team&amp;rsquo;s work was getting GDB working on the board. Check it out &lt;a href=&#34;https://code.google.com/p/coldfire-gdb-stub/&#34;&gt;here&lt;/a&gt;. It also works with the CPU emulator.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Zoom effect</title>
+      <link>http://localhost:1313/programming/picturezoom/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/programming/picturezoom/</guid>
+      <description>&lt;p&gt;I was looking at a website with a &#34;louppe&#34; effect (disqus.com, the site has changed since then), so I wanted to try doing it with a shader. Then, I added a &#34;drop-off&#34; effect - it seemed aesthetically pleasing.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Mars Rover Webcam Pano</title>
+      <link>http://localhost:1313/programming/marsroverpano/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/programming/marsroverpano/</guid>
+      <description>&lt;p&gt;I helped out with UW&#39;s &lt;a href=&#34;http://www.spacesoc.uwaterloo.ca/rover/&#34;&gt;Mars Rover team&lt;/a&gt;. One of the things I did was try to get a merged view of the webcams that were on the rover. Since there wasn&#39;t much time before the competition (and I had a huge workload during that semester), I didn&#39;t have time to try any fancy approaches (RANSAC), and approximated with an affine transform. This didn&#39;t end up being used for the rover, as anything other than the ground would diverge.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

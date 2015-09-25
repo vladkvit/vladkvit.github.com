@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Thinkpad on vladkvit.github.io</title>
+    <link>http://localhost:1313/tags/thinkpad/</link>
+    <description>Recent content in Thinkpad on vladkvit.github.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/tags/thinkpad/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Thinkpad stuff</title>
+      <link>http://localhost:1313/tinkering/thinkpad/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tinkering/thinkpad/</guid>
+      <description>
+
+&lt;p&gt;I have a Thinkpad T510. It&amp;rsquo;s been modded with an extra mini-PCIe slot and upgraded heatsink.&lt;/p&gt;
+
+&lt;h5 id=&#34;extra-mini-pcie-slot:33d85587dfa9adbe1387cfe3710cb929&#34;&gt;Extra mini-PCIe slot&lt;/h5&gt;
+
+&lt;p&gt;This mod brings the total of 2 half size and 1 full size slots. The slot works without any other modifications - my WiFi card worked in the new slot right off the bat. The pins are spaced 0.8mm apart (0.03&amp;rdquo;), so my temperature-controlled Hakko FX-888 with a flat soldering tip helped a lot.&lt;/p&gt;
+
+&lt;p&gt;I got the plastic adapter itself from digikey. It&amp;rsquo;s a 7.5mm Molex, the height refers to the entire height of the part, not from the motherboard to the card slot. According to the internet, leaving out a connector is not uncommon, other people used to add extra USB pinouts to their Asus netbooks.&lt;/p&gt;
+
+&lt;h5 id=&#34;cooling-upgrade:33d85587dfa9adbe1387cfe3710cb929&#34;&gt;Cooling upgrade&lt;/h5&gt;
+
+&lt;p&gt;The T510 shares its body with the more powerful W510, which has a nicer heatsink. The W510 uses copper instead of aluminum, and has two vents instead of one. The mounting is mostly compatible - the form factor is identical, but the GPU pad doesn&amp;rsquo;t clear some inductors that sit where W510&amp;rsquo;s GPU is supposed to be. Cutting the pad with a dremel works.&lt;/p&gt;
+
+&lt;p&gt;After the replacement, the load temperatures dropped quite a bit, and I can now run it fanless when just web-browsing. It also comes in useful when doing 3D rendering, as I can run the fan slower (with &lt;a href=&#34;http://www.staff.uni-marburg.de/~schmitzr/donate.html&#34;&gt;TPFanControl&lt;/a&gt;).&lt;/p&gt;
+
+&lt;h5 id=&#34;screen-upgrade:33d85587dfa9adbe1387cfe3710cb929&#34;&gt;Screen upgrade&lt;/h5&gt;
+
+&lt;p&gt;The laptop uses a typical 40-pin LVDS cable, therefore making it compatible with most 15.6&amp;rdquo; displays of that era (laptops switched to eDP since then). The swap ended up being fairly straightforward, as screen mounting also seems to be standard.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

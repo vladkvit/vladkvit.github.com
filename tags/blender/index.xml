@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blender on vladkvit.github.io</title>
+    <link>http://localhost:1313/tags/blender/</link>
+    <description>Recent content in Blender on vladkvit.github.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/tags/blender/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>BMW E24 6-series Model</title>
+      <link>http://localhost:1313/artistic/e24/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/artistic/e24/</guid>
+      <description>&lt;p&gt;This is my second serious car modelling project. The reference photos were harder to find, and the blueprints were quite approximate. With the first car, I&amp;rsquo;ve learned about how not to model, so this one&amp;rsquo;s all polys and good topology.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>BMW M5 Model</title>
+      <link>http://localhost:1313/artistic/m5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/artistic/m5/</guid>
+      <description>&lt;p&gt;This is a side project that I started back in first year of university. It&amp;rsquo;s my first &amp;ldquo;real&amp;rdquo; 3D modelling work. I got reference photos and approximate blueprints for an E60 (&amp;lsquo;05-&amp;lsquo;10) and did the model from them.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Doodles</title>
+      <link>http://localhost:1313/artistic/doodles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/artistic/doodles/</guid>
+      <description>&lt;p&gt;Doodles&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Videos</title>
+      <link>http://localhost:1313/artistic/videos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/artistic/videos/</guid>
+      <description>&lt;p&gt;A collection of 3D &amp;amp; VFX videos.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

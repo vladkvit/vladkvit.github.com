@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+
+
+
+
+ <html class="no-js" lang="en"> 
+<head>
+  <meta charset="utf-8" />
+
+  
+  <meta name="viewport" content="width=device-width" />
+
+  
+  <link rel="stylesheet" href="http://localhost:1313//css/foundation.min.css">
+  <link rel="stylesheet" href="http://localhost:1313//css/app.css">
+
+  <script src="http://localhost:1313//js/modernizr.foundation.js"></script>
+
+  
+  
+
+  
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36976339-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+
+
+<title>Vlad Kvitnevskiy / Thinkpad stuff</title>
+
+<link rel="stylesheet" type="text/css" href="/css/shadowbox.css">
+
+</head>
+
+<body>
+
+  <div class="row">
+    <div class="twelve columns">
+	  <div class="row">
+			<div class="four columns">
+				<h2><a href="../index.html">Portfolio</a></h2>
+			</div>
+			<div class="eight columns">
+				<h2>/ <a href="http://localhost:1313//tinkering">tinkering</a> / Thinkpad stuff </h2>
+			</div>
+	  </div>
+      <hr />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="twelve columns">
+
+	
+
+<p>I have a Thinkpad T510. It&rsquo;s been modded with an extra mini-PCIe slot and upgraded heatsink.</p>
+
+<h5 id="extra-mini-pcie-slot:33d85587dfa9adbe1387cfe3710cb929">Extra mini-PCIe slot</h5>
+
+<p>This mod brings the total of 2 half size and 1 full size slots. The slot works without any other modifications - my WiFi card worked in the new slot right off the bat. The pins are spaced 0.8mm apart (0.03&rdquo;), so my temperature-controlled Hakko FX-888 with a flat soldering tip helped a lot.</p>
+
+<p>I got the plastic adapter itself from digikey. It&rsquo;s a 7.5mm Molex, the height refers to the entire height of the part, not from the motherboard to the card slot. According to the internet, leaving out a connector is not uncommon, other people used to add extra USB pinouts to their Asus netbooks.</p>
+
+<h5 id="cooling-upgrade:33d85587dfa9adbe1387cfe3710cb929">Cooling upgrade</h5>
+
+<p>The T510 shares its body with the more powerful W510, which has a nicer heatsink. The W510 uses copper instead of aluminum, and has two vents instead of one. The mounting is mostly compatible - the form factor is identical, but the GPU pad doesn&rsquo;t clear some inductors that sit where W510&rsquo;s GPU is supposed to be. Cutting the pad with a dremel works.</p>
+
+<p>After the replacement, the load temperatures dropped quite a bit, and I can now run it fanless when just web-browsing. It also comes in useful when doing 3D rendering, as I can run the fan slower (with <a href="http://www.staff.uni-marburg.de/~schmitzr/donate.html">TPFanControl</a>).</p>
+
+<h5 id="screen-upgrade:33d85587dfa9adbe1387cfe3710cb929">Screen upgrade</h5>
+
+<p>The laptop uses a typical 40-pin LVDS cable, therefore making it compatible with most 15.6&rdquo; displays of that era (laptops switched to eDP since then). The swap ended up being fairly straightforward, as screen mounting also seems to be standard.</p>
+
+
+    </div>
+	
+
+  </div>
+
+  
+  
+  
+  
+  
+  
+  <script src="http://localhost:1313//js/jquery.js"></script>
+  <script src="http://localhost:1313//js/foundation.min.js"></script>
+  
+  
+  <script src="http://localhost:1313//js/app.js"></script>
+  
+
+
+
+   <script type="text/javascript" src="/js/shadowbox.js"></script>
+  <script type="text/javascript">
+    Shadowbox.init();
+  </script>
+
+<script data-no-instant>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
+</html>

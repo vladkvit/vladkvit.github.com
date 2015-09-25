@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+
+
+
+
+ <html class="no-js" lang="en"> 
+<head>
+  <meta charset="utf-8" />
+
+  
+  <meta name="viewport" content="width=device-width" />
+
+  
+  <link rel="stylesheet" href="http://localhost:1313//css/foundation.min.css">
+  <link rel="stylesheet" href="http://localhost:1313//css/app.css">
+
+  <script src="http://localhost:1313//js/modernizr.foundation.js"></script>
+
+  
+  
+
+  
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36976339-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+
+
+<title>Vlad Kvitnevskiy / tags / Matlab</title>
+<link rel="stylesheet" type="text/css" href="/css/shadowbox.css">
+
+</head>
+
+<body>
+
+  <div class="row">
+    <div class="twelve columns">
+	  <div class="row">
+			<div class="four columns">
+				<h2><a href="../index.html">Portfolio</a></h2>
+			</div>
+			<div class="eight columns">
+				<h2>/ <a href="http://localhost:1313//tags/">tags</a> / Matlab</h2>
+			</div>
+	  </div>
+      <hr />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="twelve columns">
+
+    
+    	
+	  <div class="row">
+        <div class="eight columns">
+		  <h3>Audio Transform</h3>
+		  	
+		    <aside><p>
+		    	
+				<a href="http://localhost:1313//tags/programming">programming</a>, <a href="http://localhost:1313//tags/matlab">Matlab</a>
+		    </p></aside>
+            <p>Fooling around with wavelet-like transforms. I would like something that has both a high frequency resolution &amp; bandwidth along with a high temporal resolution for high frequencies. By comparison, regular (non-windowed) FFT transforms the entire signal, with no temporal axis. A windowed FFT has a temporal resolution of SIG_LENGTH / WINDOW_LENGTH. A STFT transform (FFT with sliding window) is better, but its temporal resolution is still low-frequency. My transform is inspired by the way ears work, as I believe that is a better space for what I am trying to achieve. Constant Q transforms / Morlet wavelet transform solve this problem on some level as well.</p>
+
+<p>The top picture is the transform of the signal in the bottom picture (two sines added together).</p>
+
+        </div>
+
+        
+		<div class="four columns">
+
+		  <h3></h3>
+			<ul class="block-grid one-up" >
+			  
+			  
+			  <li>
+			    <a href="/images/audio_transform/stft_mod3.png" rel="shadowbox[audio]">
+				  <img src="/images/audio_transform/thumb/stft_mod3.png" alt="Transform" title="Transform">
+				</a>
+			  </li>
+			  
+			  <li>
+			    <a href="/images/audio_transform/Signal.png" rel="shadowbox[audio]">
+				  <img src="/images/audio_transform/thumb/Signal.png" alt="Signal" title="Signal">
+				</a>
+			  </li>
+			  
+			</ul>
+		</div>
+		
+      </div>
+
+<hr />
+
+
+    
+    	
+	  <div class="row">
+        <div class="eight columns">
+		  <h3>Denoising</h3>
+		  	
+		    <aside><p>
+		    	
+				<a href="http://localhost:1313//tags/programming">programming</a>, <a href="http://localhost:1313//tags/matlab">Matlab</a>, <a href="http://localhost:1313//tags/pixel-bender">pixel bender</a>
+		    </p></aside>
+            In my fourth year, there was an assignment dealing with different types of denoising. One of them was black-white grain noise, so I made a shader that only resampled those pixels. I was quite impressed with the result.
+        </div>
+
+        
+		<div class="four columns">
+
+		  <h3></h3>
+			<ul class="block-grid two-up" >
+			  
+			  
+			  <li>
+			    <a href="/images/Denoise/noisy2-rgb.png" rel="shadowbox[denoising]">
+				  <img src="/images/Denoise/thumb/noisy2-rgb.png" alt="f2" title="f2">
+				</a>
+			  </li>
+			  
+			  <li>
+			    <a href="/images/Denoise/lena_denoised.png" rel="shadowbox[denoising]">
+				  <img src="/images/Denoise/thumb/lena_denoised.png" alt="f2" title="f2">
+				</a>
+			  </li>
+			  
+			</ul>
+		</div>
+		
+      </div>
+
+<hr />
+
+
+    
+    	
+	  <div class="row">
+        <div class="eight columns">
+		  <h3>Mars Rover Webcam Pano</h3>
+		  	
+		    <aside><p>
+		    	
+				<a href="http://localhost:1313//tags/programming">programming</a>, <a href="http://localhost:1313//tags/matlab">Matlab</a>, <a href="http://localhost:1313//tags/pixel-bender">Pixel Bender</a>
+		    </p></aside>
+            I helped out with UW's Mars Rover team. One of the things I did was try to get a merged view of the webcams that were on the rover. Since there wasn't much time before the competition (and I had a huge workload during that semester), I didn't have time to try any fancy approaches (RANSAC), and approximated with an affine transform. This didn't end up being used for the rover, as anything other than the ground would diverge.
+        </div>
+
+        
+		<div class="four columns">
+
+		  <h3></h3>
+			<ul class="block-grid one-up" >
+			  
+			  
+			  <li>
+			    <a href="/images/Rover_Image_Merging/img_nodots.png" rel="shadowbox[marspano]">
+				  <img src="/images/Rover_Image_Merging/thumb/img_nodots.png" alt="f2" title="f2">
+				</a>
+			  </li>
+			  
+			</ul>
+		</div>
+		
+      </div>
+
+<hr />
+
+
+    
+    	
+	  <div class="row">
+        <div class="eight columns">
+		  <h3>Rasterization with Perspective-correct Texturing</h3>
+		  	
+		    <aside><p>
+		    	
+				<a href="http://localhost:1313//tags/matlab">Matlab</a>, <a href="http://localhost:1313//tags/3d">3D</a>
+		    </p></aside>
+            A friend of mine wrote a simple 2.5D texture renderer using an algorithm from the Doom & Quake era. I whipped up a Matlab script to see how much difference would a "correct" algoritm make. The script takes in any 4 verteces and renders the texture over them with a wide (90*) FOV.
+        </div>
+
+        
+		<div class="four columns">
+
+		  <h3></h3>
+			<ul class="block-grid one-up" >
+			  
+			  
+			  <li>
+			    <a href="/images/Matlab_Rasterize/render.png" rel="shadowbox[rasterization]">
+				  <img src="/images/Matlab_Rasterize/thumb/render.png" alt="f2" title="f2">
+				</a>
+			  </li>
+			  
+			</ul>
+		</div>
+		
+      </div>
+
+<hr />
+
+
+    
+
+
+
+    </div>
+	
+
+  </div>
+
+
+
+  
+  
+  
+  
+  
+  <script src="http://localhost:1313//js/jquery.js"></script>
+  <script src="http://localhost:1313//js/foundation.min.js"></script>
+  
+  
+  <script src="http://localhost:1313//js/app.js"></script>
+  
+
+
+
+   <script type="text/javascript" src="/js/shadowbox.js"></script>
+  <script type="text/javascript">
+    Shadowbox.init();
+  </script>
+
+<script data-no-instant>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
+</html>
