@@ -2,104 +2,104 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://vladkvit.github.io/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/programming/raytracer/</loc>
+    <loc>http://vladkvit.github.io/programming/raytracer/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/programming/compiler/</loc>
+    <loc>http://vladkvit.github.io/programming/compiler/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/programming/quadcopter_v1/</loc>
+    <loc>http://vladkvit.github.io/programming/quadcopter_v1/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/mainpages/programming/</loc>
+    <loc>http://vladkvit.github.io/mainpages/programming/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/artistic/m5/</loc>
+    <loc>http://vladkvit.github.io/programming/audiotransform/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/programming/audiotransform/</loc>
+    <loc>http://vladkvit.github.io/artistic/m5/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tinkering/thinkpad/</loc>
+    <loc>http://vladkvit.github.io/tinkering/thinkpad/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/artistic/e24/</loc>
+    <loc>http://vladkvit.github.io/artistic/e24/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/mainpages/artistic/</loc>
+    <loc>http://vladkvit.github.io/mainpages/artistic/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/artistic/videos/</loc>
+    <loc>http://vladkvit.github.io/artistic/videos/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/mainpages/tinkering/</loc>
+    <loc>http://vladkvit.github.io/mainpages/tinkering/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/programming/shading/</loc>
+    <loc>http://vladkvit.github.io/programming/shading/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/artistic/doodles/</loc>
+    <loc>http://vladkvit.github.io/artistic/doodles/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/programming/gamewired/</loc>
+    <loc>http://vladkvit.github.io/programming/gamewired/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/programming/rasterizationmatlab/</loc>
+    <loc>http://vladkvit.github.io/programming/rasterizationmatlab/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/programming/kirsch/</loc>
+    <loc>http://vladkvit.github.io/programming/kirsch/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/programming/denoising/</loc>
+    <loc>http://vladkvit.github.io/programming/denoising/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/programming/cs488finalproj/</loc>
+    <loc>http://vladkvit.github.io/programming/cs488finalproj/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/programming/tetris/</loc>
+    <loc>http://vladkvit.github.io/programming/tetris/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/programming/rasterization2/</loc>
+    <loc>http://vladkvit.github.io/programming/rasterization2/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/programming/m68k_gdb/</loc>
+    <loc>http://vladkvit.github.io/programming/m68k_gdb/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/programming/picturezoom/</loc>
+    <loc>http://vladkvit.github.io/programming/picturezoom/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/programming/marsroverpano/</loc>
+    <loc>http://vladkvit.github.io/programming/marsroverpano/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/programming/teensy/</loc>
+    <loc>http://vladkvit.github.io/programming/teensy/</loc>
   </url>
   
 </urlset>

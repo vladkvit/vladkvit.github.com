@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Real Time on vladkvit.github.io</title>
-    <link>http://localhost:1313/tags/real-time/</link>
+    <link>http://vladkvit.github.io/tags/real-time/</link>
     <description>Recent content in Real Time on vladkvit.github.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/tags/real-time/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://vladkvit.github.io/tags/real-time/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Quadcopter</title>
-      <link>http://localhost:1313/programming/quadcopter_v1/</link>
+      <link>http://vladkvit.github.io/programming/quadcopter_v1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/programming/quadcopter_v1/</guid>
+      <guid>http://vladkvit.github.io/programming/quadcopter_v1/</guid>
       <description>&lt;p&gt;I sponsored and did quite a bit of work to help with my brother&amp;rsquo;s quadcopter when he was back in highschool. &lt;a href=&#34;https://github.com/larrykvit/Motion_Detection_Suite&#34;&gt;Here&amp;rsquo;s&lt;/a&gt; the code Github page.&lt;/p&gt;
 
 &lt;p&gt;The basic idea was to try using a tiny x86 board with TCP/IP over WiFi, and a Ground Control Station. We used &lt;a href=&#34;http://qgroundcontrol.org/&#34;&gt;QGroundControl&lt;/a&gt; as the GCS. We were using ESCs flashed with SimonK, a YEI 500Hz AHRS, and a Maestro USB-PWM adapter. Although using x86 and custom-writing the flight control software wasn&amp;rsquo;t a good idea, in retrospect, it still sort of worked.&lt;/p&gt;

@@ -2,28 +2,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Embedded on vladkvit.github.io</title>
-    <link>http://localhost:1313/tags/embedded/</link>
+    <link>http://vladkvit.github.io/tags/embedded/</link>
     <description>Recent content in Embedded on vladkvit.github.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/tags/embedded/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://vladkvit.github.io/tags/embedded/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>M68K GDB Stub</title>
-      <link>http://localhost:1313/programming/m68k_gdb/</link>
+      <link>http://vladkvit.github.io/programming/m68k_gdb/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/programming/m68k_gdb/</guid>
+      <guid>http://vladkvit.github.io/programming/m68k_gdb/</guid>
       <description>&lt;p&gt;As part of ECE354, each student grouped up into a team and wrote a RTOS for the Motorola 68000 CPU / Coldfire board. The first two weeks of my team&amp;rsquo;s work was getting GDB working on the board. Check it out &lt;a href=&#34;https://code.google.com/p/coldfire-gdb-stub/&#34;&gt;here&lt;/a&gt;. It also works with the CPU emulator.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Quadcopter</title>
-      <link>http://localhost:1313/programming/quadcopter_v1/</link>
+      <link>http://vladkvit.github.io/programming/quadcopter_v1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/programming/quadcopter_v1/</guid>
+      <guid>http://vladkvit.github.io/programming/quadcopter_v1/</guid>
       <description>&lt;p&gt;I sponsored and did quite a bit of work to help with my brother&amp;rsquo;s quadcopter when he was back in highschool. &lt;a href=&#34;https://github.com/larrykvit/Motion_Detection_Suite&#34;&gt;Here&amp;rsquo;s&lt;/a&gt; the code Github page.&lt;/p&gt;
 
 &lt;p&gt;The basic idea was to try using a tiny x86 board with TCP/IP over WiFi, and a Ground Control Station. We used &lt;a href=&#34;http://qgroundcontrol.org/&#34;&gt;QGroundControl&lt;/a&gt; as the GCS. We were using ESCs flashed with SimonK, a YEI 500Hz AHRS, and a Maestro USB-PWM adapter. Although using x86 and custom-writing the flight control software wasn&amp;rsquo;t a good idea, in retrospect, it still sort of worked.&lt;/p&gt;
@@ -32,10 +32,10 @@
     
     <item>
       <title>Teensy chip programming</title>
-      <link>http://localhost:1313/programming/teensy/</link>
+      <link>http://vladkvit.github.io/programming/teensy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/programming/teensy/</guid>
+      <guid>http://vladkvit.github.io/programming/teensy/</guid>
       <description>&lt;p&gt;I wanted to make the closed-loop response of my quadcopter faster (AHRS to ESC path). I got a &lt;a href=&#34;http://www.pjrc.com/teensy/&#34;&gt;Teensy 2.0&lt;/a&gt; to read serial from AHRS, send PWM to the ESCs, and read USB from the motherboard for direction info.
 I only got as far as making a blinking LED and interfacing with x86 through raw USB. See projects &lt;a href=&#34;https://bitbucket.org/vkvitnev/teensy_vs2010&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;https://bitbucket.org/vkvitnev/teensy_vs2010_2&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
