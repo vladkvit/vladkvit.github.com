@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>vladkvit.github.io</title>
-    <link>http://vladkvit.github.io/</link>
+    <link>https://vladkvit.github.io/</link>
     <description>Recent content on vladkvit.github.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://vladkvit.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://vladkvit.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Raytracer</title>
-      <link>http://vladkvit.github.io/programming/raytracer/</link>
+      <link>https://vladkvit.github.io/programming/raytracer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://vladkvit.github.io/programming/raytracer/</guid>
+      <guid>https://vladkvit.github.io/programming/raytracer/</guid>
       <description>&lt;p&gt;I wrote my raytracer as a part of my &lt;a href=&#34;https://www.student.cs.uwaterloo.ca/~cs488/&#34;&gt;CS488&lt;/a&gt; Graphics course.
 It&amp;rsquo;s pretty straight-forward: single-threaded, non-AA non-accelerated raytracer. It renders polygons and spheres.&lt;/p&gt;
 </description>
@@ -21,20 +21,20 @@ It&amp;rsquo;s pretty straight-forward: single-threaded, non-AA non-accelerated 
     
     <item>
       <title>Parser</title>
-      <link>http://vladkvit.github.io/programming/compiler/</link>
+      <link>https://vladkvit.github.io/programming/compiler/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://vladkvit.github.io/programming/compiler/</guid>
+      <guid>https://vladkvit.github.io/programming/compiler/</guid>
       <description>&lt;p&gt;My work-in-progress compiler. So far I have a working SLR(1) parser for any BNF grammar and a simple lexer. Github code &lt;a href=&#34;https://github.com/vladkvit/parser_mirror&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Quadcopter</title>
-      <link>http://vladkvit.github.io/programming/quadcopter_v1/</link>
+      <link>https://vladkvit.github.io/programming/quadcopter_v1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://vladkvit.github.io/programming/quadcopter_v1/</guid>
+      <guid>https://vladkvit.github.io/programming/quadcopter_v1/</guid>
       <description>&lt;p&gt;I sponsored and did quite a bit of work to help with my brother&amp;rsquo;s quadcopter when he was back in highschool. &lt;a href=&#34;https://github.com/larrykvit/Motion_Detection_Suite&#34;&gt;Here&amp;rsquo;s&lt;/a&gt; the code Github page.&lt;/p&gt;
 
 &lt;p&gt;The basic idea was to try using a tiny x86 board with TCP/IP over WiFi, and a Ground Control Station. We used &lt;a href=&#34;http://qgroundcontrol.org/&#34;&gt;QGroundControl&lt;/a&gt; as the GCS. We were using ESCs flashed with SimonK, a YEI 500Hz AHRS, and a Maestro USB-PWM adapter. Although using x86 and custom-writing the flight control software wasn&amp;rsquo;t a good idea, in retrospect, it still sort of worked.&lt;/p&gt;
@@ -42,20 +42,11 @@ It&amp;rsquo;s pretty straight-forward: single-threaded, non-AA non-accelerated 
     </item>
     
     <item>
-      <title>Programming</title>
-      <link>http://vladkvit.github.io/mainpages/programming/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://vladkvit.github.io/mainpages/programming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Audio Transform</title>
-      <link>http://vladkvit.github.io/programming/audiotransform/</link>
+      <link>https://vladkvit.github.io/programming/audiotransform/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://vladkvit.github.io/programming/audiotransform/</guid>
+      <guid>https://vladkvit.github.io/programming/audiotransform/</guid>
       <description>&lt;p&gt;Fooling around with wavelet-like transforms. I would like something that has both a high frequency resolution &amp;amp; bandwidth along with a high temporal resolution for high frequencies. By comparison, regular (non-windowed) FFT transforms the entire signal, with no temporal axis. A windowed FFT has a temporal resolution of SIG_LENGTH / WINDOW_LENGTH. A STFT transform (FFT with sliding window) is better, but its temporal resolution is still low-frequency. My transform is inspired by the way ears work, as I believe that is a better space for what I am trying to achieve. Constant Q transforms / Morlet wavelet transform solve this problem on some level as well.&lt;/p&gt;
 
 &lt;p&gt;The top picture is the transform of the signal in the bottom picture (two sines added together).&lt;/p&gt;
@@ -64,20 +55,29 @@ It&amp;rsquo;s pretty straight-forward: single-threaded, non-AA non-accelerated 
     
     <item>
       <title>BMW M5 Model</title>
-      <link>http://vladkvit.github.io/artistic/m5/</link>
+      <link>https://vladkvit.github.io/artistic/m5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://vladkvit.github.io/artistic/m5/</guid>
+      <guid>https://vladkvit.github.io/artistic/m5/</guid>
       <description>&lt;p&gt;This is a side project that I started back in first year of university. It&amp;rsquo;s my first &amp;ldquo;real&amp;rdquo; 3D modelling work. I got reference photos and approximate blueprints for an E60 (&amp;lsquo;05-&amp;lsquo;10) and did the model from them.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Thinkpad stuff</title>
-      <link>http://vladkvit.github.io/tinkering/thinkpad/</link>
+      <title>Programming</title>
+      <link>https://vladkvit.github.io/mainpages/programming/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://vladkvit.github.io/tinkering/thinkpad/</guid>
+      <guid>https://vladkvit.github.io/mainpages/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Thinkpad stuff</title>
+      <link>https://vladkvit.github.io/tinkering/thinkpad/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://vladkvit.github.io/tinkering/thinkpad/</guid>
       <description>
 
 &lt;p&gt;I have a Thinkpad T510. It&amp;rsquo;s been modded with an extra mini-PCIe slot and upgraded heatsink.&lt;/p&gt;
@@ -101,79 +101,79 @@ It&amp;rsquo;s pretty straight-forward: single-threaded, non-AA non-accelerated 
     </item>
     
     <item>
-      <title>BMW E24 6-series Model</title>
-      <link>http://vladkvit.github.io/artistic/e24/</link>
+      <title>Artistic</title>
+      <link>https://vladkvit.github.io/mainpages/artistic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://vladkvit.github.io/artistic/e24/</guid>
+      <guid>https://vladkvit.github.io/mainpages/artistic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BMW E24 6-series Model</title>
+      <link>https://vladkvit.github.io/artistic/e24/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://vladkvit.github.io/artistic/e24/</guid>
       <description>&lt;p&gt;This is my second serious car modelling project. The reference photos were harder to find, and the blueprints were quite approximate. With the first car, I&amp;rsquo;ve learned about how not to model, so this one&amp;rsquo;s all polys and good topology.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Artistic</title>
-      <link>http://vladkvit.github.io/mainpages/artistic/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://vladkvit.github.io/mainpages/artistic/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Videos</title>
-      <link>http://vladkvit.github.io/artistic/videos/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://vladkvit.github.io/artistic/videos/</guid>
-      <description>&lt;p&gt;A collection of 3D &amp;amp; VFX videos.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Tinkering</title>
-      <link>http://vladkvit.github.io/mainpages/tinkering/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://vladkvit.github.io/mainpages/tinkering/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Specular &#43; Diffuse Shading</title>
-      <link>http://vladkvit.github.io/programming/shading/</link>
+      <link>https://vladkvit.github.io/programming/shading/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://vladkvit.github.io/programming/shading/</guid>
+      <guid>https://vladkvit.github.io/programming/shading/</guid>
       <description>&lt;p&gt;An implementation of Phong shading. &lt;a href=&#34;https://www.youtube.com/watch?v=btRh_7UlCwU&#34;&gt;Video here&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Doodles</title>
-      <link>http://vladkvit.github.io/artistic/doodles/</link>
+      <title>Tinkering</title>
+      <link>https://vladkvit.github.io/mainpages/tinkering/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://vladkvit.github.io/artistic/doodles/</guid>
+      <guid>https://vladkvit.github.io/mainpages/tinkering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Videos</title>
+      <link>https://vladkvit.github.io/artistic/videos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://vladkvit.github.io/artistic/videos/</guid>
+      <description>&lt;p&gt;A collection of 3D &amp;amp; VFX videos.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Doodles</title>
+      <link>https://vladkvit.github.io/artistic/doodles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://vladkvit.github.io/artistic/doodles/</guid>
       <description>&lt;p&gt;Doodles&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Game, Wired</title>
-      <link>http://vladkvit.github.io/programming/gamewired/</link>
+      <link>https://vladkvit.github.io/programming/gamewired/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://vladkvit.github.io/programming/gamewired/</guid>
+      <guid>https://vladkvit.github.io/programming/gamewired/</guid>
       <description>&lt;p&gt;This is from back when I was in highschool. It was my entry for &lt;a href=&#34;http://jayisgames.com&#34;&gt;JayIsGames&lt;/a&gt;&amp;rsquo;s very first CGDC competition. It&amp;rsquo;s just one level. Try out the game &lt;a href=&#34;http://jayisgames.com/cgdc1/?puzzleID=17&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Rasterization with Perspective-correct Texturing</title>
-      <link>http://vladkvit.github.io/programming/rasterizationmatlab/</link>
+      <link>https://vladkvit.github.io/programming/rasterizationmatlab/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://vladkvit.github.io/programming/rasterizationmatlab/</guid>
+      <guid>https://vladkvit.github.io/programming/rasterizationmatlab/</guid>
       <description>&lt;p&gt;A friend of mine wrote a simple 2.5D texture renderer using an algorithm from the Doom &amp; Quake era. I whipped up a Matlab script to see how much difference would a &#34;correct&#34; algoritm make.&lt;/p&gt;
 &lt;p&gt;The script takes in any 4 verteces and renders the texture over them with a wide (90*) FOV.&lt;/p&gt;
 </description>

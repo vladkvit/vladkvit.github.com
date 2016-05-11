@@ -2,104 +2,104 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://vladkvit.github.io/</loc>
+    <loc>https://vladkvit.github.io/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://vladkvit.github.io/programming/raytracer/</loc>
+    <loc>https://vladkvit.github.io/programming/raytracer/</loc>
   </url>
   
   <url>
-    <loc>http://vladkvit.github.io/programming/compiler/</loc>
+    <loc>https://vladkvit.github.io/programming/compiler/</loc>
   </url>
   
   <url>
-    <loc>http://vladkvit.github.io/programming/quadcopter_v1/</loc>
+    <loc>https://vladkvit.github.io/programming/quadcopter_v1/</loc>
   </url>
   
   <url>
-    <loc>http://vladkvit.github.io/mainpages/programming/</loc>
+    <loc>https://vladkvit.github.io/programming/audiotransform/</loc>
   </url>
   
   <url>
-    <loc>http://vladkvit.github.io/programming/audiotransform/</loc>
+    <loc>https://vladkvit.github.io/artistic/m5/</loc>
   </url>
   
   <url>
-    <loc>http://vladkvit.github.io/artistic/m5/</loc>
+    <loc>https://vladkvit.github.io/mainpages/programming/</loc>
   </url>
   
   <url>
-    <loc>http://vladkvit.github.io/tinkering/thinkpad/</loc>
+    <loc>https://vladkvit.github.io/tinkering/thinkpad/</loc>
   </url>
   
   <url>
-    <loc>http://vladkvit.github.io/artistic/e24/</loc>
+    <loc>https://vladkvit.github.io/mainpages/artistic/</loc>
   </url>
   
   <url>
-    <loc>http://vladkvit.github.io/mainpages/artistic/</loc>
+    <loc>https://vladkvit.github.io/artistic/e24/</loc>
   </url>
   
   <url>
-    <loc>http://vladkvit.github.io/artistic/videos/</loc>
+    <loc>https://vladkvit.github.io/programming/shading/</loc>
   </url>
   
   <url>
-    <loc>http://vladkvit.github.io/mainpages/tinkering/</loc>
+    <loc>https://vladkvit.github.io/mainpages/tinkering/</loc>
   </url>
   
   <url>
-    <loc>http://vladkvit.github.io/programming/shading/</loc>
+    <loc>https://vladkvit.github.io/artistic/videos/</loc>
   </url>
   
   <url>
-    <loc>http://vladkvit.github.io/artistic/doodles/</loc>
+    <loc>https://vladkvit.github.io/artistic/doodles/</loc>
   </url>
   
   <url>
-    <loc>http://vladkvit.github.io/programming/gamewired/</loc>
+    <loc>https://vladkvit.github.io/programming/gamewired/</loc>
   </url>
   
   <url>
-    <loc>http://vladkvit.github.io/programming/rasterizationmatlab/</loc>
+    <loc>https://vladkvit.github.io/programming/rasterizationmatlab/</loc>
   </url>
   
   <url>
-    <loc>http://vladkvit.github.io/programming/kirsch/</loc>
+    <loc>https://vladkvit.github.io/programming/kirsch/</loc>
   </url>
   
   <url>
-    <loc>http://vladkvit.github.io/programming/denoising/</loc>
+    <loc>https://vladkvit.github.io/programming/denoising/</loc>
   </url>
   
   <url>
-    <loc>http://vladkvit.github.io/programming/cs488finalproj/</loc>
+    <loc>https://vladkvit.github.io/programming/cs488finalproj/</loc>
   </url>
   
   <url>
-    <loc>http://vladkvit.github.io/programming/tetris/</loc>
+    <loc>https://vladkvit.github.io/programming/tetris/</loc>
   </url>
   
   <url>
-    <loc>http://vladkvit.github.io/programming/rasterization2/</loc>
+    <loc>https://vladkvit.github.io/programming/rasterization2/</loc>
   </url>
   
   <url>
-    <loc>http://vladkvit.github.io/programming/m68k_gdb/</loc>
+    <loc>https://vladkvit.github.io/programming/m68k_gdb/</loc>
   </url>
   
   <url>
-    <loc>http://vladkvit.github.io/programming/picturezoom/</loc>
+    <loc>https://vladkvit.github.io/programming/picturezoom/</loc>
   </url>
   
   <url>
-    <loc>http://vladkvit.github.io/programming/marsroverpano/</loc>
+    <loc>https://vladkvit.github.io/programming/marsroverpano/</loc>
   </url>
   
   <url>
-    <loc>http://vladkvit.github.io/programming/teensy/</loc>
+    <loc>https://vladkvit.github.io/programming/teensy/</loc>
   </url>
   
 </urlset>

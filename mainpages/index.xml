@@ -2,36 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mainpages on vladkvit.github.io</title>
-    <link>http://vladkvit.github.io/mainpages/</link>
+    <link>https://vladkvit.github.io/mainpages/</link>
     <description>Recent content in Mainpages on vladkvit.github.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://vladkvit.github.io/mainpages/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://vladkvit.github.io/mainpages/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Programming</title>
-      <link>http://vladkvit.github.io/mainpages/programming/</link>
+      <link>https://vladkvit.github.io/mainpages/programming/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://vladkvit.github.io/mainpages/programming/</guid>
+      <guid>https://vladkvit.github.io/mainpages/programming/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Artistic</title>
-      <link>http://vladkvit.github.io/mainpages/artistic/</link>
+      <link>https://vladkvit.github.io/mainpages/artistic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://vladkvit.github.io/mainpages/artistic/</guid>
+      <guid>https://vladkvit.github.io/mainpages/artistic/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tinkering</title>
-      <link>http://vladkvit.github.io/mainpages/tinkering/</link>
+      <link>https://vladkvit.github.io/mainpages/tinkering/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://vladkvit.github.io/mainpages/tinkering/</guid>
+      <guid>https://vladkvit.github.io/mainpages/tinkering/</guid>
       <description></description>
     </item>
     

@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>School on vladkvit.github.io</title>
-    <link>http://vladkvit.github.io/tags/school/</link>
+    <link>https://vladkvit.github.io/tags/school/</link>
     <description>Recent content in School on vladkvit.github.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://vladkvit.github.io/tags/school/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://vladkvit.github.io/tags/school/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>CS488 Final Project</title>
-      <link>http://vladkvit.github.io/programming/cs488finalproj/</link>
+      <link>https://vladkvit.github.io/programming/cs488finalproj/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://vladkvit.github.io/programming/cs488finalproj/</guid>
+      <guid>https://vladkvit.github.io/programming/cs488finalproj/</guid>
       <description>&lt;p&gt;This is my final project for the CS488 Graphics course. It has OpenGL rendering a few cubes with specular+diffuse shading and parallax mapping. Originally, the idea was to get a simulated windowing environment, but there&#39;s never enough time.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Kirsch Edge Detection</title>
-      <link>http://vladkvit.github.io/programming/kirsch/</link>
+      <link>https://vladkvit.github.io/programming/kirsch/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://vladkvit.github.io/programming/kirsch/</guid>
+      <guid>https://vladkvit.github.io/programming/kirsch/</guid>
       <description>&lt;p&gt;In my ECE327 course, the final project was to implement a Kirsch Edge Detector in VHDL for an FPGA. &lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Raytracer</title>
-      <link>http://vladkvit.github.io/programming/raytracer/</link>
+      <link>https://vladkvit.github.io/programming/raytracer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://vladkvit.github.io/programming/raytracer/</guid>
+      <guid>https://vladkvit.github.io/programming/raytracer/</guid>
       <description>&lt;p&gt;I wrote my raytracer as a part of my &lt;a href=&#34;https://www.student.cs.uwaterloo.ca/~cs488/&#34;&gt;CS488&lt;/a&gt; Graphics course.
 It&amp;rsquo;s pretty straight-forward: single-threaded, non-AA non-accelerated raytracer. It renders polygons and spheres.&lt;/p&gt;
 </description>
@@ -41,20 +41,20 @@ It&amp;rsquo;s pretty straight-forward: single-threaded, non-AA non-accelerated 
     
     <item>
       <title>Software Rasterization</title>
-      <link>http://vladkvit.github.io/programming/rasterization2/</link>
+      <link>https://vladkvit.github.io/programming/rasterization2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://vladkvit.github.io/programming/rasterization2/</guid>
+      <guid>https://vladkvit.github.io/programming/rasterization2/</guid>
       <description>&lt;p&gt;As a part of my CS488 Graphics course, I wrote a software implementation of edge rasterization. Features a full projection matrix, screen clipping, frustum culling, etc + object transformation. The 2 RGB gnomons represent the model-space and world-space. A line drawing API was given.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Tetris</title>
-      <link>http://vladkvit.github.io/programming/tetris/</link>
+      <link>https://vladkvit.github.io/programming/tetris/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://vladkvit.github.io/programming/tetris/</guid>
+      <guid>https://vladkvit.github.io/programming/tetris/</guid>
       <description>&lt;p&gt;I wrote a functional 3D-rendered Tetris game as a part of my CS488 Graphics course. The game is still &#34;flat&#34;, it&#39;s just rendered using cubes in OpenGL. Most of the game logic was provided.&lt;/p&gt;
 </description>
     </item>

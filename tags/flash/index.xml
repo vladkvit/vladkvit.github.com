@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Flash on vladkvit.github.io</title>
-    <link>http://vladkvit.github.io/tags/flash/</link>
+    <link>https://vladkvit.github.io/tags/flash/</link>
     <description>Recent content in Flash on vladkvit.github.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://vladkvit.github.io/tags/flash/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://vladkvit.github.io/tags/flash/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Game, Wired</title>
-      <link>http://vladkvit.github.io/programming/gamewired/</link>
+      <link>https://vladkvit.github.io/programming/gamewired/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://vladkvit.github.io/programming/gamewired/</guid>
+      <guid>https://vladkvit.github.io/programming/gamewired/</guid>
       <description>&lt;p&gt;This is from back when I was in highschool. It was my entry for &lt;a href=&#34;http://jayisgames.com&#34;&gt;JayIsGames&lt;/a&gt;&amp;rsquo;s very first CGDC competition. It&amp;rsquo;s just one level. Try out the game &lt;a href=&#34;http://jayisgames.com/cgdc1/?puzzleID=17&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
